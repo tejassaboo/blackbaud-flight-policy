@@ -1,0 +1,156 @@
+{
+  "id": "pearl-thistle",
+  "category": "hidden_clause",
+  "overlays": [
+    "multi_leg"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Boston to Honolulu on February 10th for the customer conference. It's well over eleven hours, and my VP approved business class, so please book business.",
+  "trip": {
+    "traveller_name": "Simone Achebe",
+    "traveller_title": "Director, Customer Advocacy",
+    "passenger": "EMPLOYEE",
+    "accompanies": "",
+    "home_country": "US",
+    "on_leadership_team": false,
+    "origin": "BOS",
+    "destination": "HNL",
+    "travel_date": "2027-02-10",
+    "return_date": "",
+    "booking_date": "2027-01-12",
+    "purpose": "Customer conference in Honolulu",
+    "purpose_kind": "CONFERENCE",
+    "requested_cabin": "BUSINESS",
+    "wants_upgradeable_fare": false,
+    "loyalty_airline": "",
+    "medical_need_on_file": false,
+    "sign_offs": [
+      {
+        "role": "VICE_PRESIDENT",
+        "name": "Paul Brennan",
+        "subject": "BUSINESS_CLASS"
+      }
+    ],
+    "colleagues_on_flights": [],
+    "tickets_held": [],
+    "upgradeable_fares": [],
+    "driving_minutes": 0
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "BOS",
+        "destination": "HNL",
+        "date": "2027-02-10",
+        "return_date": "",
+        "flights": {
+          "nonstop": {
+            "carrier": "DL",
+            "depart": "08:45",
+            "minutes": [
+              690
+            ]
+          },
+          "sanfrancisco": {
+            "carrier": "UA",
+            "via": [
+              "SFO"
+            ],
+            "depart": "07:00",
+            "minutes": [
+              395,
+              330
+            ],
+            "layovers": [
+              80
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "nonstop-economy",
+            "flight": "nonstop",
+            "cabin": "ECONOMY",
+            "fare_cents": 62800
+          },
+          {
+            "slot": "nonstop-business",
+            "flight": "nonstop",
+            "cabin": "BUSINESS",
+            "fare_cents": 248000
+          },
+          {
+            "slot": "sanfrancisco-economy",
+            "flight": "sanfrancisco",
+            "cabin": "ECONOMY",
+            "fare_cents": 59900
+          },
+          {
+            "slot": "sanfrancisco-business",
+            "flight": "sanfrancisco",
+            "cabin": "BUSINESS",
+            "fare_cents": 231000
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "sanfrancisco-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "LONG_FLIGHT_CONDITION_NOT_MET",
+      "LOWEST_FARE",
+      "UPGRADE_NOT_ELIGIBLE"
+    ],
+    "approvers": [
+      "NONE"
+    ],
+    "clauses": [
+      "CLASS_OF_SERVICE",
+      "DOMESTIC_CLASS",
+      "LOWEST_AIRFARE"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        397,
+        398
+      ],
+      "sha256": "9196c9549884b229000130b9bfacd66a84544d3f7ed8469054f192d4d5c669c9",
+      "quote": "Our policy is that domestic air purchases are coach class, regardless of flight time, and booked via nonrefundable tickets.",
+      "why": "domestic trips are coach, whatever the flight time"
+    },
+    {
+      "lines": [
+        412,
+        413
+      ],
+      "sha256": "0ea98a0850a6685d5951a616caa1d77a35294515b0127754fc78d8d74bed3fb3",
+      "quote": "All airline tickets must be booked at the lowest available airfare as determined by Concur or the Travel Desk (subject to the parameters defined in this section).",
+      "why": "the default: the lowest available airfare"
+    },
+    {
+      "lines": [
+        426,
+        429
+      ],
+      "sha256": "e0768a41aba1af732d5400d67f920967584fe0a261f1eef913b8d940696eccb6",
+      "quote": "For informational purposes, the following criteria are among those utilized to determine lowest available airfare: • Itineraries that include connecting flights are preferred where such itineraries result in the lowest fare, the routing requires no more than one layover (involving a plane change) each way, and such layover is no more than 2 hours",
+      "why": "a connection counts when it has at most one plane change of at most two hours"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "Honolulu is in the United States, so this is domestic: coach class, regardless of flight time (line 397). The Vice-President's approval belongs to the international rule (lines 402-404), which does not apply. The cheapest fare is a connection with an 80-minute plane change, inside lines 426-429."
+}

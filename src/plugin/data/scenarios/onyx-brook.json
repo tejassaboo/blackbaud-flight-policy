@@ -1,0 +1,135 @@
+{
+  "id": "onyx-brook",
+  "category": "multi_rule",
+  "overlays": [
+    "dearer_option"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Chicago O'Hare to Los Angeles on January 14th for the nonprofit customer conference. Just grab the cheapest seat you can.",
+  "trip": {
+    "traveller_name": "Kevin Duarte",
+    "traveller_title": "Customer Marketing Manager",
+    "passenger": "EMPLOYEE",
+    "accompanies": "",
+    "home_country": "US",
+    "on_leadership_team": false,
+    "origin": "ORD",
+    "destination": "LAX",
+    "travel_date": "2027-01-14",
+    "return_date": "",
+    "booking_date": "2026-12-17",
+    "purpose": "Nonprofit customer conference in Los Angeles",
+    "purpose_kind": "CONFERENCE",
+    "requested_cabin": "ECONOMY",
+    "wants_upgradeable_fare": false,
+    "loyalty_airline": "",
+    "medical_need_on_file": false,
+    "sign_offs": [],
+    "colleagues_on_flights": [],
+    "tickets_held": [],
+    "upgradeable_fares": [],
+    "driving_minutes": 0
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "ORD",
+        "destination": "LAX",
+        "date": "2027-01-14",
+        "return_date": "",
+        "flights": {
+          "early": {
+            "carrier": "UA",
+            "depart": "07:15"
+          },
+          "american": {
+            "carrier": "AA",
+            "depart": "09:50"
+          },
+          "midday": {
+            "carrier": "UA",
+            "depart": "13:30"
+          }
+        },
+        "offers": [
+          {
+            "slot": "early-economy",
+            "flight": "early",
+            "cabin": "ECONOMY",
+            "fare_cents": 25900,
+            "refundable": true
+          },
+          {
+            "slot": "american-economy",
+            "flight": "american",
+            "cabin": "ECONOMY",
+            "fare_cents": 28400
+          },
+          {
+            "slot": "midday-economy",
+            "flight": "midday",
+            "cabin": "ECONOMY",
+            "fare_cents": 30100
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "american-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "LOWEST_FARE",
+      "REFUNDABLE_FARE_NOT_ALLOWED"
+    ],
+    "approvers": [
+      "NONE"
+    ],
+    "clauses": [
+      "CLASS_OF_SERVICE",
+      "DOMESTIC_CLASS",
+      "LOWEST_AIRFARE"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        432,
+        432
+      ],
+      "sha256": "34b9a070747d7d274e944870e5f93cd22fbd541d401cc7519fb31488f070eddd",
+      "quote": "Nonrefundable tickets must always be booked.",
+      "why": "a refundable fare is never booked"
+    },
+    {
+      "lines": [
+        397,
+        398
+      ],
+      "sha256": "9196c9549884b229000130b9bfacd66a84544d3f7ed8469054f192d4d5c669c9",
+      "quote": "Our policy is that domestic air purchases are coach class, regardless of flight time, and booked via nonrefundable tickets.",
+      "why": "domestic trips are coach, whatever the flight time"
+    },
+    {
+      "lines": [
+        412,
+        413
+      ],
+      "sha256": "0ea98a0850a6685d5951a616caa1d77a35294515b0127754fc78d8d74bed3fb3",
+      "quote": "All airline tickets must be booked at the lowest available airfare as determined by Concur or the Travel Desk (subject to the parameters defined in this section).",
+      "why": "the default: the lowest available airfare"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "The cheapest seat is a refundable fare, but domestic trips are booked via nonrefundable tickets (line 397) and nonrefundable tickets must always be booked (line 432): the cheapest nonrefundable fare."
+}

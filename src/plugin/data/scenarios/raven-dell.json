@@ -1,0 +1,152 @@
+{
+  "id": "raven-dell",
+  "category": "distractor",
+  "overlays": [
+    "date_arithmetic",
+    "month_end"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Sorry for the short notice, I know it's less than a week out: I need Boston to Atlanta on January 2nd for the customer's year-start planning session. Economy, cheapest available.",
+  "trip": {
+    "traveller_name": "Jordan Whitaker",
+    "traveller_title": "Customer Success Manager",
+    "passenger": "EMPLOYEE",
+    "accompanies": "",
+    "home_country": "US",
+    "on_leadership_team": false,
+    "origin": "BOS",
+    "destination": "ATL",
+    "travel_date": "2027-01-02",
+    "return_date": "",
+    "booking_date": "2026-12-28",
+    "purpose": "Customer year-start planning session",
+    "purpose_kind": "CUSTOMER_VISIT",
+    "requested_cabin": "ECONOMY",
+    "wants_upgradeable_fare": false,
+    "loyalty_airline": "",
+    "medical_need_on_file": false,
+    "sign_offs": [],
+    "colleagues_on_flights": [],
+    "tickets_held": [],
+    "upgradeable_fares": [],
+    "driving_minutes": 0
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "BOS",
+        "destination": "ATL",
+        "date": "2027-01-02",
+        "return_date": "",
+        "flights": {
+          "morning": {
+            "carrier": "DL",
+            "depart": "07:40"
+          },
+          "jetblue": {
+            "carrier": "B6",
+            "depart": "10:30"
+          },
+          "afternoon": {
+            "carrier": "DL",
+            "depart": "12:15"
+          }
+        },
+        "offers": [
+          {
+            "slot": "morning-economy",
+            "flight": "morning",
+            "cabin": "ECONOMY",
+            "fare_cents": 32400
+          },
+          {
+            "slot": "jetblue-economy",
+            "flight": "jetblue",
+            "cabin": "ECONOMY",
+            "fare_cents": 29800
+          },
+          {
+            "slot": "afternoon-economy",
+            "flight": "afternoon",
+            "cabin": "ECONOMY",
+            "fare_cents": 35100
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "jetblue-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "LOWEST_FARE"
+    ],
+    "approvers": [
+      "NONE"
+    ],
+    "clauses": [
+      "CLASS_OF_SERVICE",
+      "DOMESTIC_CLASS",
+      "LOWEST_AIRFARE",
+      "ADVANCE_PURCHASE"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        408,
+        409
+      ],
+      "sha256": "9a9dfc531f35cb6c294b51a79a4d63160976fe93eedc44f4cc22e5fa6056a354",
+      "quote": "Whenever possible , trips should be scheduled with a minimum 7 day, and preferably with a 14 -day advance planning to maximize the opportunity to obtain lowest possible airfares.",
+      "why": "the advance-planning rule is 'whenever possible', not a ban"
+    },
+    {
+      "lines": [
+        412,
+        413
+      ],
+      "sha256": "0ea98a0850a6685d5951a616caa1d77a35294515b0127754fc78d8d74bed3fb3",
+      "quote": "All airline tickets must be booked at the lowest available airfare as determined by Concur or the Travel Desk (subject to the parameters defined in this section).",
+      "why": "the default: the lowest available airfare"
+    },
+    {
+      "lines": [
+        397,
+        398
+      ],
+      "sha256": "9196c9549884b229000130b9bfacd66a84544d3f7ed8469054f192d4d5c669c9",
+      "quote": "Our policy is that domestic air purchases are coach class, regardless of flight time, and booked via nonrefundable tickets.",
+      "why": "domestic trips are coach, whatever the flight time"
+    }
+  ],
+  "distractors": [
+    {
+      "lines": [
+        166,
+        167
+      ],
+      "quote": "Air travel should be booked 14 days in advance whenever possible; at a minimum 7",
+      "why": "the summary's softer restatement of the advance-planning rule"
+    },
+    {
+      "lines": [
+        749,
+        749
+      ],
+      "quote": "Expense reports should be submitted by the traveler within 14 calendar days of completion of a trip.",
+      "why": "a day count for expense reports, not for booking"
+    }
+  ],
+  "design_notes": "Booked on December 28 for January 2: 5 days ahead, across a month and year end. The 7-day minimum applies 'whenever possible' (lines 408-409) and is no ban, so the trip is booked at the lowest available airfare."
+}

@@ -1,0 +1,142 @@
+{
+  "id": "dune-larkspur",
+  "category": "easy",
+  "overlays": [
+    "upgrade_not_taken"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Seattle to Tokyo Haneda on February 3rd for the partner workshop. My VP signed off on business if I need it, but let's keep costs down: economy, cheapest you can find.",
+  "trip": {
+    "traveller_name": "Hannah Lindqvist",
+    "traveller_title": "Solutions Architect",
+    "passenger": "EMPLOYEE",
+    "accompanies": "",
+    "home_country": "US",
+    "on_leadership_team": false,
+    "origin": "SEA",
+    "destination": "HND",
+    "travel_date": "2027-02-03",
+    "return_date": "",
+    "booking_date": "2027-01-05",
+    "purpose": "Partner workshop in Tokyo",
+    "purpose_kind": "TRAINING",
+    "requested_cabin": "ECONOMY",
+    "wants_upgradeable_fare": false,
+    "loyalty_airline": "",
+    "medical_need_on_file": false,
+    "sign_offs": [
+      {
+        "role": "VICE_PRESIDENT",
+        "name": "Gregory Hale",
+        "subject": "BUSINESS_CLASS"
+      }
+    ],
+    "colleagues_on_flights": [],
+    "tickets_held": [],
+    "upgradeable_fares": [],
+    "driving_minutes": 0
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "SEA",
+        "destination": "HND",
+        "date": "2027-02-03",
+        "return_date": "",
+        "flights": {
+          "delta": {
+            "carrier": "DL",
+            "depart": "11:20"
+          },
+          "japan": {
+            "carrier": "JL",
+            "depart": "13:05"
+          },
+          "ana": {
+            "carrier": "NH",
+            "depart": "16:40"
+          }
+        },
+        "offers": [
+          {
+            "slot": "delta-economy",
+            "flight": "delta",
+            "cabin": "ECONOMY",
+            "fare_cents": 91200
+          },
+          {
+            "slot": "delta-business",
+            "flight": "delta",
+            "cabin": "BUSINESS",
+            "fare_cents": 586000
+          },
+          {
+            "slot": "japan-economy",
+            "flight": "japan",
+            "cabin": "ECONOMY",
+            "fare_cents": 93400
+          },
+          {
+            "slot": "ana-economy",
+            "flight": "ana",
+            "cabin": "ECONOMY",
+            "fare_cents": 88700
+          },
+          {
+            "slot": "ana-business",
+            "flight": "ana",
+            "cabin": "BUSINESS",
+            "fare_cents": 601000
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "ana-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "LOWEST_FARE"
+    ],
+    "approvers": [
+      "NONE"
+    ],
+    "clauses": [
+      "CLASS_OF_SERVICE",
+      "INTERNATIONAL_CLASS",
+      "LOWEST_AIRFARE"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        412,
+        413
+      ],
+      "sha256": "0ea98a0850a6685d5951a616caa1d77a35294515b0127754fc78d8d74bed3fb3",
+      "quote": "All airline tickets must be booked at the lowest available airfare as determined by Concur or the Travel Desk (subject to the parameters defined in this section).",
+      "why": "the default: the lowest available airfare"
+    },
+    {
+      "lines": [
+        402,
+        404
+      ],
+      "sha256": "0ec78811b20ff2aa881511085a213b64e2be7670afbec07bbc096ba5062d8c4d",
+      "quote": "International travel is to be by lowest possible airfare available. Any international travel exceeding 8 hours (whether a single segment or multiple segments combined) can be booked in an upgradeable fare or, with the prior approval of the traveler's Vice-President, in business class.",
+      "why": "the international rule: lowest fare; business over 8 hours with the Vice-President's prior approval"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "Over 8 hours with the Vice-President's approval, business is permitted (lines 402-404), not required: the traveller asks for the cheapest economy fare, so the lowest possible airfare."
+}

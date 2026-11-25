@@ -1,0 +1,113 @@
+{
+  "id": "tansy-reef",
+  "category": "refusal",
+  "overlays": [
+    "personal_travel",
+    "outside_air_section"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Can you book me Boston to Orlando on December 23rd? It's our family holiday trip to the parks. Just put it on the corporate card and I'll sort it out with expenses later.",
+  "trip": {
+    "traveller_name": "Allison Grant",
+    "traveller_title": "Senior Software Engineer",
+    "passenger": "EMPLOYEE",
+    "accompanies": "",
+    "home_country": "US",
+    "on_leadership_team": false,
+    "origin": "BOS",
+    "destination": "MCO",
+    "travel_date": "2026-12-23",
+    "return_date": "",
+    "booking_date": "2026-12-02",
+    "purpose": "Family holiday",
+    "purpose_kind": "PERSONAL",
+    "requested_cabin": "ECONOMY",
+    "wants_upgradeable_fare": false,
+    "loyalty_airline": "",
+    "medical_need_on_file": false,
+    "sign_offs": [],
+    "colleagues_on_flights": [],
+    "tickets_held": [],
+    "upgradeable_fares": [],
+    "driving_minutes": 0
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "BOS",
+        "destination": "MCO",
+        "date": "2026-12-23",
+        "return_date": "",
+        "flights": {
+          "jetblue": {
+            "carrier": "B6",
+            "depart": "09:05"
+          },
+          "delta": {
+            "carrier": "DL",
+            "depart": "13:40"
+          }
+        },
+        "offers": [
+          {
+            "slot": "jetblue-economy",
+            "flight": "jetblue",
+            "cabin": "ECONOMY",
+            "fare_cents": 27400
+          },
+          {
+            "slot": "delta-economy",
+            "flight": "delta",
+            "cabin": "ECONOMY",
+            "fare_cents": 29900
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "REFUSE",
+    "offer_slots": [],
+    "cabins": [
+      "NONE"
+    ],
+    "reason_codes": [
+      "OUTSIDE_POLICY_SCOPE",
+      "PERSONAL_TRAVEL_NOT_COVERED"
+    ],
+    "approvers": [
+      "NONE"
+    ],
+    "clauses": [
+      "PERSONAL_VACATION",
+      "RESPONSIBILITY"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        296,
+        298
+      ],
+      "sha256": "6eecb8e682dc2166202a7682fdc3b39e5cf7e1fd1ee2864f525d9f6250bdc580",
+      "quote": "Employees are not permitted to book personal air travel using Concur, but can contact the Campbell Travel to arrange personal travel at +1 800.823.3597. Employees must use their own payment methods (e.g., not the corporate travel credit card) for such expenses.",
+      "why": "personal air travel is not booked through the company"
+    },
+    {
+      "lines": [
+        128,
+        129
+      ],
+      "sha256": "789777dfedfe696dde8a52d423b158df179b074de5f6d38544a5226b56be5919",
+      "quote": "It is company policy to reimburse employees for ordinary, necessary and reasonable travel expenses when directly connected with or pertaining to the transaction of company business.",
+      "why": "the company reimburses travel connected with company business"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "Employees are not permitted to book personal air travel using Concur and must use their own payment methods, not the corporate card (lines 296-298); the company pays only for travel connected with company business (lines 128-129). No ticket is bought."
+}

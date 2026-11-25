@@ -1,0 +1,1095 @@
+Travel Policy
+February 2014
+
+TABLE OF CONTENTS
+1. Introduction
+Purpose & Principles
+Scope
+Responsibility and Enforcement
+Statement of General Policy
+Executive Summary
+4
+2. General Travel Requirements
+Reservation Procedures
+Corporate Travel Credit Card
+Travel Desk
+Travel Profile
+Concur Technical Support
+Travel Portal on Meebee
+Spouse/Companion Travel
+Employees Traveling Together
+Travel Accident Insurance
+Personal/Vacation Travel
+Driver Safety
+6
+3. International Travel Guidelines
+Immunization
+Currency Exchanges
+Local Currency Fees
+Restricted/Prohibited Countries or Regions
+Customs
+Passports/Visas
+Medications
+7
+4. Air Travel
+Policy
+Class of Service
+Advance Purchase
+Lowest Airfare Destination
+Preferred Airlines
+Frequent Flier Programs
+Changes
+Double Bookings
+Cancellations
+Unused Airline Tickets
+Miscellaneous Fees
+9
+
+5. Lodging
+General
+Hotel Selection
+Room Type
+Corporate Hotels: Charleston, Austin and Cambridge
+Conference/Event Hotels
+Cancellations
+Frequent Guest Programs
+Mini-Bar/Snacks
+International Overnight/Morning Arrival
+Best Value Decisions
+10
+6. Rental Cars
+Policy
+12
+Insurance
+Size Limits/Extra Amenities
+Upgrades
+Refueling
+Accidents
+
+7. Other Transportation
+Personal Car Usage
+Rail
+Taxis
+Private Car Services
+13
+8. Meals and Entertainment
+Policy
+Personal Meals
+Business Meals
+Entertainment
+Tickets for Sporting Events, Theater, etc.
+14
+9. Telecommunications
+Mobile Phones
+Hotel Telephone Usage
+Hotel Fax Usage
+Hotel Internet Usage
+15
+10. Expense Reports and Reimbursement
+Policy
+15
+APPENDICES
+A. Reimbursable Expenses Non-reimbursable expenses
+Reimbursable expenses
+B. Expenses not to be charged to Corporate Travel Credit Card or
+processed in Concur
+C. Billable Travel
+Blackbaud Professional Services Travel Policy
+
+1. INTRODUCTION
+PURPOSE
+The transition from a manual, 20 th Century travel and expense reporting system to an automated, modern
+environment requires Blackbaud to simplify and modernize our travel policy. With the establishment of this new
+policy, Blackbaud seeks to provide guidelines to follow in order to protect the interests of both the employee and
+Blackbaud. This document serves to clarify the means by which travel should be arranged and expensed, and
+parameters that employees should understand and apply when making travel decisions.
+
+In addition, the implementation of new travel tools will allow Blackbaud to more accurately aggregate our spend -
+and thus negotiate better deals with our travel suppliers.
+
+SCOPE
+This policy applies to all employees of Blackbaud and its subsidiaries, anywhere in the world, regardless of whether
+the travel is billable or non-billable.
+
+GUIDING PRINCIPLES
+
+It would be impossible for any policy to cover every conceivable expense situation. Therefore, we expect all
+Blackbaud employees to bear in mind 3 principles as they incur and submit expenses:
+• First, our clients have entrusted us with their resources. To sustain their trust, we treat our expenses -
+billable or non-billable - in a manner in which our clients would find responsible and ethical.
+• Second, upholding our core values is important. One of our Core Values is that we are Good Stewards of
+our Re sources. Practically speaking, this means that we hold each other accountable for exercising
+moderation in our spending, selecting the lowest cost travel methods that reasonably meet the business
+objective, selecting reasonable and moderate locations for business meals, etc.
+• Third, employee safety is always important. Thus when faced with a low cost alternative that doesn't feel
+safe, employees should exercise appropriate judgment in selecting a reasonable alternative.
+
+RESPONSIBILITY AND ENFORCEMENT
+It is company policy to reimburse employees for ordinary, necessary and reasonable travel expenses when directly
+connected with or pertaining to the transaction of company business.
+
+The employee is responsible for understanding and applying the travel policy and his/her manager is responsible
+for accurately reviewing expense reports for reasonability and compliance. Employees who do not follow our travel
+policy will be subject to withholding of reimbursement and/or disciplinary action.
+
+The Accounts Payable Department is responsible for ensuring that expenses reimbursed or paid for by the company
+are in compliance with this Corporate Travel Policy.
+
+Maintenance and updating of the Corporate Travel Policy are the responsibility of the Finance Department and will
+include collaboration with Purchasing, Travel Personnel, and Human Resources. Any questions, concerns or
+feedback regarding this travel polic y or the company's travel management program should be addressed to the
+Travel Desk at travel@blackbaud.com.
+
+EXECUTIVE SUMMARY
+
+For your convenience, key & operationally frequent points are summarized in the table below. This does not replace
+the policy; it is simply a quick reference for your convenience.
+
+General Travel & Expense Submission
+• Travelers are expected to use the Concur system to book travel and submit expenses. If you have a situation
+where the Concur solution does not meet your needs, please escalate to the Travel desk.
+• Travelers are expected to use the Blackbaud corporate travel card, which integrates with Concur. This
+reduces your effort, simplifies the process, makes aggregation of spend easier, and reduces risk for
+Blackbaud.
+• Receipts are required for expenses as follows: o Expenses incurred on Corporate Travel Card:
+Receipts required for air, hotel & rental car expenses, and for $75 and higher on all other expenses. Detailed
+electronic receipts showing breakdown for expenses are acceptable. This is enabled within Concur
+requesting electronic receipts.
+o Cash Expenses (or expenses on other charge cards): Receipts required for $25 and higher
+• Expenses should be submitted within 14 days whenever possible and reasonable. Software and other large
+expenses should be submitted via Accounts Payable.
+Air Travel
+• Air travel should be booked using the lowest cost available, and when possible on
+our preferred providers, as outlined later in this policy. Concur provides color
+coding to assist in this selection - "green" fares are within our policy; "yellow fares"
+may require further business justification.
+• Air travel should be booked 14 days in advance whenever possible; at a minimum 7
+days in advance
+Air travel is booked using non-refundable fares.
+Hotel
+• Hotel rooms should be booked via Concur as well.
+• Hotel rooms should be booked at reasonable rates and with our preferred providers. Concur provides color
+coding to assist in this selection - "green" rates are within our policy; "yellow" rates may require further
+business justification.
+• Blackbaud receives preferred rates as follows:
+• Charleston: Courtyard by Marriott Mount Pleasant (booking only via Blackbaud Travel); Aloft by the Airport
+• Austin: Aloft and Westin, at the Domain; Hampton Inn, Arboretum; Homewood Suites
+• Cambridge: Marlowe, Sonesta and Hampton Inn
+• Indianapolis: Holiday Inn, Carmel
+• Hotel snacks and refreshments are the traveler's responsibility, unless substituting for a meal.
+• Travelers may make reasonable "best value" decisions or trade-offs when the interests of the traveler and
+Blackbaud align - see detailed policy for more information
+• Hotels for business meetings (group meetings, etc.) should be arranged through the Travel Department to
+facilitate effective negotiations.
+
+Car Rental
+• Car rental should be booked via Concur as well. Car rental should be a last resort travel tool - in larger cities,
+and in most international cities, Taxi's are a more economical alternative.
+• Cars should be booked at the Intermediate Level, and returned full of gas. Additional travel insurance is not
+required, nor reimbursed.
+Employees should share cars whenever possible.
+Other Travel Methods
+• Personal car travel is reimbursable within Concur.
+• Standard expenses (mileage, parking) to commute to the office are not reimbursed.
+• Train travel in the US may be booked through Concur; Train travel internationally may be booked through the
+Travel Desk
+Meals & Expenses
+• Personal Meals while travelling are expected to stay within approved per diem guideline s -
+http://meebee/BBSites/BBTravelers/Documents/Client%20Facing%20Travel%20Policy%202012.pdf (US)
+• Business Meals are expected to be held at reasonable locations, in alignment with the same per diem
+guidelines (guidelines may vary by international location)
+• Tickets or other material entertainment expenses must be approved by the CFO prior to reimbursement
+• Membership dues (Airline, Hotel, etc.) must be approved by the Controller or CFO prior to reimbursement
+
+2. GENERAL TRAVEL GUIDELINES
+RESERVATION PROCEDURES
+In order to appropriately aggregate our travel spend, as well as for saftey and security reasons, all travelers are
+required to use Concur https://www.concursolutions.com/travelhome.asp , our online booking tool, to reserve travel.
+In certain rare cases, travelers are asked to use the Company Travel Desk. The travel desk can be reached at
+travel@blackbaud.com.
+
+The only circumstance in which an employee may book his/her own business -related travel directly through
+another travel agency or online booking tool is for low cost carriers that may not (yet) be in the Concur system.
+At the time of the publishing of this policy, there are no exceptions in the market.
+
+CORPORATE TRAVEL CREDIT CARD USE
+Blackbaud requires that all employees who travel more than twice per year obtain and use a Corporate Travel Credit
+Card.
+• All air, hotel, and rental car expenses must be booked on the Corporate Travel Credit Card
+• All other expenses (meals, taxis, parking, entertainment, etc.) that can be charged to an employee's
+Corporate Travel Credit Card should be charged to the card as well.
+As noted earlier, centralizing our e xpenses in one source allows Blackbaud to aggregate spend and effectively
+negotiate with suppliers. This card is also integrated with our Time and Expense system, and thus saves employees
+time. Employees who do not expense eligible travel and entertainmen t expenses to the Corporate Travel Credit
+Card may not be reimbursed. (See the remainder of this document and Appendices A & C for further guidance on
+eligible expenses.)
+
+Please contact Card Administrator (CardAdmin@blackbaud.com) to obtain a Corporate Travel Credit Card.
+
+TRAVEL DESK
+Contact the Travel Desk for any complicated bookings (e.g., group travel, multi-leg international travel), in situations
+where individual travelers require special assistance, or when you believe a lower cost air/ho tel/car option is
+available but not showing in the online booking tool.
+
+Travel Desk can be reached at travel@blackbaud.com. The hours of operation are from 8:00 AM - 6:00 PM EST.
+There is also an after hour's service that is available 24x7 that can assi st with any issues that may arise. Please
+note that after hour's bookings often result in additional company expense, and therefore should be used selectively.
+Toll Free: 1.866.359.6322
+Internal: ext. 3100
+Direct: 843.654.3100
+Email: travel@blackbaud.com
+Fax: 1.843.216.6100
+After Hours: 1.800.823.3597 ($20.00 fee per inquiry and/or $25.00 for travel booked after hours)
+
+TRAVEL PROFILE SETUP
+Prior to traveling, all Blackbaud travelers need to submit a completed Travel Profile to enable the online system and
+to ensure details and preferences are considered to in the reservation process. As you would expect, preferences
+recorded on the Travel Profile are subject to the terms outlined in this policy.
+
+Requests for new travel profiles should be submitted to travel@blackbaud.com.
+
+After this information is saved, the tool automatically populates the individual's preferences when booking travel.
+Employees are responsible for updating their profiles with any changes, especially if Cost Center numbers change
+due to reorganizations. .
+
+CONCUR TECHINICAL SUPPORT
+If you experience any technical difficulties with Concur, please call the help and support desk immediately at +1
+800.823.3597. The hours of operation are 9:00 AM to 6:00 PM, Monday through Friday EST. If possible, please
+call the Concur help desk as the issue is happening so that the team can troubleshoot and perform the necessary
+test while you are experiencing the problem.
+
+TRAVEL PORTAL ON MEEBEE
+Blackbaud has a travel portal located on Meebee and can be accessed by the following link.
+http://meebee/BBSites/BBTravelers/Pages/BBTravelers.aspx. This site is updated regularly with current negotiated
+rates, quick tips, maps, and any important changes occurring in the travel industry.
+
+SPOUSE/COMPANION TRAVEL
+Expenses of a spouse or companion who accompanies an employee on a business trip or other business function
+will be reimbursed where the travel has been authorized in advance from a Senior Vice President or higher,
+generally under the following circumstances..
+A spouse or companion is ex pected to assist the employee in
+entertaining the client's spouses at a meeting, convention, or a company-sponsored function.
+• In the instance of recruiting or relocation the expense of the spouse or companion is subject to the
+same limitations and authorization as the employee. All expenses above this amount are the
+responsibility of the employee.
+
+Note:
+• Any reimbursement will be included in the employee's W-2 as compensation
+• please obtain and return forms for this circumstance from/to Accounts Payable
+(Accounts.Payable@blackbaud.com)
+
+Reimbursement will not be authorized if a spouse or companion joins the employee on a bu siness trip for the
+employee's convenience unless such travel is approved in advance by a Senior Vice President.
+
+EMPLOYEES TRAVELING TOGETHER
+
+In order to protect the human resources of Blackbaud, the number of Blackbaud employees traveling together on
+the same flight must not exceed three members of the Executive Leadership Team. An exception of this policy can
+only be approved by the CEO.
+
+TRAVEL ACCIDENT INSURANCE
+The Corporate Travel Credit Card provides accidental death and dismemberment cover age of up to $500,000
+during the airline flight. Employees will not be reimbursed for any additional travel or life insurance coverage
+expenses. For more details on this insurance and other benefits provided by the Corporate Travel Credit Card,
+please see the Travel Meebee site.
+PERSONAL/VACATION TRAVEL
+Employees are not permitted to book personal air travel using Concur, but can contact the Campbell Travel to
+arrange personal travel at +1 800.823.3597. Employees must use their own payment methods (e.g., not the
+corporate travel credit card) for such expenses.
+
+DRIVER SAFETY
+Blackbaud employees are prohibited from using a mobile phone or other wireless communication device while
+operating a motor vehicle, except for voice GPS applications. To be clear, Blackbaud employees may not make a
+phone call, text, email or surf the web, or use mobile apps while operating a vehicle on corporate travel. In
+addition, you are responsible for reading and abiding by Blackbaud's Driving Policy (See Appendix D).
+
+3. INTERNATIONAL TRAVEL GUIDELINES
+GENERAL
+For Blackbaud travelers who are U.S. citizens, many of the below sections reference guidance provided by the U.S.
+State Department or U.S. Commerce Department. Please note the following websites for those t wo government
+departments:
+
+U.S. Department of State: http://travel.state.gov/travel/
+U.S. Department of Commerce: http://www.trade.gov/cs/
+
+For Blackbaud travelers who are non-U.S. Citizens, your home country provides identical services and information
+through similar ministries or departments. Please consult tho se resources directly, or contact the Travel Desk for
+assistance.
+
+IMMUNIZATION
+All employees who travel outside of his/her resident country on business are required to take the appropriate
+immunization shots as recommended by the U.S. State Department , his/her home country health authorities and
+local health authorities. The Travel Desk can advise you of the shots needed for various countries. For travel to
+countries where extra immunizations are required, it is recommended you travel with a current copy of your
+inoculation certificates and keep a copy at your desk so that they can be retrieved by a co -worker at your request.
+
+CURRENCY EXCHANGE RATES
+Travelers may use the rate published at oanda.com or the currency exchange location where the charges were
+made for any cash expenditure. The Corporate Travel Credit Card will automatically translate expenditures placed
+on the card into the card's based currency inclusive of any exchange fees.
+
+LOCAL CURRENCY FEES
+Travelers will be reimbursed for ATM/exchange fees incurred as a result of withdrawing funds in a currency other
+than their own national currency. For example, a Sydney -based Blackbaud empl oyee traveling to the United
+Kingdom might withdraw £100 from a Lloyd's Bank ATM machine at Heathrow Airport upon arrival to pay for the
+Underground and other incidental expenses, and incur bank and alternate currency fees of £2.50. Those fees
+
+represent a reimbursable expense. As a guide, travelers should plan for one withdrawal per day, unless multiple
+currency zones are visited in the same day.
+
+RESTRICTED/PROHIBITED COUNTRIES OR REGIONS
+The U.S. State Department maintains an alert list of countries or regions where travel is prohibited, or where there
+are travel warnings and travels should use caution. These apply to all Blackbaud travelers regardless of nationality.
+Employees will not travel on business to prohibited countries; if visits to such areas seem necessary, CEO is
+required. For travel to countries with warnings or alerts, Vice President approval is required, and travelers should
+follow all relevant traveler safety guidelines.
+
+CUSTOMS
+SALEABLE MERCHANDISE
+Employees should not carr y saleable merchandise including spare parts and software CD's. Should these be
+necessary for the purpose of the trip, arrangements should be made to ship these items in advance. Otherwise,
+large duties may be levied or goods may be confiscated. Your ho st or the Commerce Department website
+referenced above can usually advise about such requirements in advance of travel.
+
+PROHIBITED ITEMS
+Some countries prohibit the importation of items such as alcoholic beverages and religious or pornographic
+materials. All Blackbaud travelers can check with the U.S. State Department for information on specific countries
+at the State Department website referenced above.
+
+PASSPORTS AND VISAS
+POLICY
+It is the employee's responsibility to obtain any required documentation for travel to foreign countries. Blackbaud
+will reimburse employees for Passports and Visas if an employee does not already have a passport and/or visa and
+it is required for business travel. You may contact the Travel Desk for assistance in obtaining passport information
+and request forms.
+
+It is recommended to keep a current copy of your passport/visa at your desk so that it can be retrieved by a co -
+worker at your request. Pack a second copy in your luggage separately from the original documents.
+
+PASSPORT SERVICES
+Please refer to the State Department website referenced above or your own host country authorities.
+
+VISA SERVICES
+For visa services, please refer to the State Department website referenced above or your own host country
+authorities.
+
+MEDICATIONS
+Carry copies of all prescriptions for medication and keep the medication in the original pharmacy containers.
+
+4. AIR TRAVEL
+POLICY
+GENERAL
+Air travel should be considered the last alternative after all other options to conduct business have been considered
+(i.e. Video/Telecommunications conferencing, e-mail, or telephone). If the destination is under four hours of driving
+time, consideration must be given to driving instead of flying.
+
+Air reservations must be booked through Concur or via the Travel Desk. You may not book airfare directly outside
+of Concur. If there are flight prices/options that you do not see in Concur, contact the Travel Desk to book them on
+your behalf. Airfare booked directly by an employee outside of Concur may not be reimbursed.
+
+Employees with Corporate Travel Credit Cards will book their air travel on that card. For all o ther employees, air
+travel will be purchased using Blackbaud's corporate card.
+
+Private aviation expenses (e.g., private jet) are not reimbursable without the pre -approval of the CFO.
+
+CLASS OF SERVICE
+DOMESTIC
+Our policy is that domestic air purchases are coach class, regardless of flight time, and booked via nonrefundable
+tickets. Individuals may upgrade with frequent flyer miles or at their own expense. Exception requests for medical
+reasons may be submitted and approved by both the travel department and the appropriate Vice President.
+
+INTERNATIONAL
+International travel is to be by lowest possible airfare available. Any international travel exceeding 8 hours (whether
+a single segment or multiple segments combined) can be booked in an upgradeable fare or, with the prior approval
+of the traveler's Vice-President, in business class. Employees may utilize their own frequent flier miles to upgrade
+fares, where applicable.
+
+ADVANCE PURCHASE
+Whenever possible , trips should be scheduled with a minimum 7 day, and preferably with a 14 -day advance
+planning to maximize the opportunity to obtain lowest possible airfares.
+
+LOWEST AIRFARE SELECTION
+All airline tickets must be booked at the lowest available airfare as determined by Concur or the Travel Desk (subject
+to the parameters defined in this section).
+
+When booking with Concur, airfare options will be denoted by color scheme:
+
+• Green will denote an airfare that is (1) within policy and (2) within an acc eptable cost range. There is no
+approval necessary to select a Green fare.
+• Yellow will denote an airfare that is (1) within policy but (2) above the lowest fare parameters. There is no
+pre-approval necessary to select a Yellow fare; however, the traveler must be prepared to justify his/her
+selection at the time of booking and to defend his/her selection at the point of manager approval.
+
+If there are unique circumstances surrounding your travel and none of the itineraries displayed in Concur meet your
+needs, contact the Travel Desk for assistance.
+
+For informational purposes, the following criteria are among those utilized to determine lowest available airfare:
+• Itineraries that include connecting flights are preferred where such itineraries result in the lowest fare, the
+routing requires no more than one layover (involving a plane change) each way, and such layover is no
+more than 2 hours
+Time Window: departure/arrival is no more than 2 hours before or after requested
+time.
+• Nonrefundable tickets must always be booked.
+• Full Y fares, or upgradeable fares, are not allowed to be booked.
+
+PREFERED AIRLINES
+
+Blackbaud has negotiated special rates with specific carriers as an integral part of our overall objective of reducing
+business-related travel expenses. Travelers should use these preferred carriers whenever possible. T hese
+discounts are pre-loaded into Concur and are automatically calculated when the reservation has been completed.
+
+FREQUENT FLIER PROGRAMS
+Traveling employees may retain frequent flyer program benefits and incorporate them into their personal profile s
+and receive points and rewards appropriately. However, participation in these programs may not influence selection
+that may result in any incremental cost to the company beyond the "lowest available airfare" as defined in this policy.
+
+CHANGES
+We understand that travel schedules may need to change due to unforeseen circumstances. When that occurs,
+standby fees or fees resulting from changing return flights en-route on the same day may be reimbursed. However,
+travelers may be asked to provide business justification and are expected to do so when requested.
+
+If a traveler elects to offer her/his seat in exchange for a voucher, or receives a voucher due to traveler
+inconvenience (e.g., cancelled flight), s/he can make use of that voucher as s/he deems appropriate.
+
+DOUBLE-BOOKINGS
+Double-bookings and back-to-back flights are prohibited.
+
+CANCELLATIONS
+All airlines require cancellation of flights PRIOR to ticketed departure time to receive a credit or refund. Most e -
+tickets can be voided within 24 hours from the date the ticket was issued without incurri ng fees, but this request
+must be done thru the Travel Desk only.
+
+UNUSED AIRLINE TICKETS
+Unused airline tickets are tracked directly thru Concur. When a flight has been cancelled the information is sent to
+the individual's profile for future use. It is the responsibility of the employee to make sure to use these tickets for
+future travel.
+
+MISCELLANEOUS FEES
+1. Seat Assignments are not reimbursable, except for travel on airlines where pre -assignment of seats is not
+possible (e.g., Southwest Airlines typically requires you to purchase your seat prior to travel to guarantee a
+seat on a booked fli ght). Travelers will not be reimbursed for any upgrade seat selections when regular
+economy seats are available.
+2. Wi-Fi in flight (GOGO)-is reimbursable ONLY for flights over 1.5 hours. (Travelers should seek to use on an
+as-needed basis.)
+3. Checked bags are reimbursable up to 2 bags but will not be reimbursed for overweight bags.
+
+5. LODGING
+GENERAL
+Employees are responsible for booking their own hotel reservations. As explained in Section 2, employees with
+Corporate Travel Credit Cards must pay all business-related hotel fees on that card.
+
+The only exception to this is when booking rooms at the Charleston Courtyard by Marriott near Blackbaud
+headquarters. See below for information on how to book rooms there.
+
+HOTEL SELECTION
+Hotel reservations must be booked by the employee through Concur or by the Travel Desk on behalf of the
+employees. Employees who book hotels outside of Concur without the assistance of the Travel Desk ma y not be
+reimbursed.
+
+Blackbaud has negotiated preferred rates with certain hotels and these rates will automatically appear first in
+Concur. If available, employees should book these preferred rates or special agency/consortium rates.
+
+When booking with Concur, hotel options will be denoted by color scheme:
+
+• Green will denote a hotel rate that is (1) within policy and (2) within an acceptable cost range. There is no
+approval necessary to select a Green hotel.
+• Yellow will denote a hotel rate that is (1) within policy but (2) above the lowest fare parameters. There is
+no pre-approval necessary to select a Yellow hotel; however, the traveler must be prepared to justify his/her
+selection at the time of booking and to defend his/her selection at the point of manager approval.
+
+Travelers should contact the travel desk or the after hour's number if a suitable hotel cannot be booked within the
+guidelines.
+
+ROOM TYPE
+Employees are entitled to stay in a single occupancy room with a private bath and may only accept room upgrades
+to suites or executive floor rooms if the upgrade is at no additional cost to Blackbaud.
+
+CORPORATE HOTELS: CHARLESTON, AUSTIN AND CAMBRIDGE
+Blackbaud receives preferred rates as follows:
+• Charleston: Courtyard by Marriott Mount Pleasant; Aloft by the Airport
+• Austin: Aloft and Westin, at the Domain; Hampton Inn, Arboretum; Homewood Suites
+• Cambridge: Marlowe, Sonesta and Hampton Inn
+• Indianapolis: Holiday Inn, North Carmel
+
+Please note that reservations for Charleston at the Courtyard Marriott need to be booked by the Blackbaud Travel
+Desk, as the hotel will not honor the negotiated rate for bookings not made thru the Travel Desk. Reservations at
+the Aloft Hotel - Charleston Airport may be made directly through Concur.
+
+Reservations for corporate hotels in Austin and Cambridge can and should be made through Concur, as the system
+honors our discounted rates.
+
+Divisions or departments who are planning local events must u se the Travel Desk to assist with negotiating local
+hotel rates.
+
+CONFERENCE/EVENT HOTELS
+Concur will show discounted rates for conference and other special event hotels. In the event Concur does not
+expose that rate, travelers should work with the Travel Desk to obtain that rate.
+
+CANCELLATION
+In the event a hotel room is no longer needed, advise the hotel or hotel chain directly to avoid any "no show" billing
+charges. Employees should request and retain a "cancellation number" as documentation of the transaction. Every
+effort should be made to avoid paying for hotel rooms that are not used.
+
+FREQUENT GUEST PROGRAMS
+Many hotels have frequent guest programs that reward travelers with free accommodations in exchange for
+frequent patronage at the hotel. Awards from such programs may be retained by travelers for personal use.
+Participation in these programs may not influence hotel selection which would result in additional cost beyond any
+Blackbaud negotiated rate or other preferred rate. Any membership fees associated with joining these programs
+are not reimbursable.
+
+MINI-BAR/SNACKS
+Mini-bar and snack expenses are only reimbursable when substituting for a meal.
+
+INTERNATIONAL OVERNIGHT/MORNING ARRIVAL
+For travelers on international flights of eight hours or greater where a business meeting occurs on the day of
+arrival, it is permitted to use and expense airport arrival lounges. If no such facility is available, travelers may
+book and expense a hotel room for the night coinciding with the day of travel in order to prepare for same day
+meetings. Any arrival lounge/hotel room fees otherwise incurred will not be eligible for reimbursement.
+
+BEST VALUE DECISIONS
+Travelers often choose to stay with friends or relatives in destination city for comfort and for reasons of cost. In this
+circumstance,
+Blackbaud will reimburse travelers host expenses for one hospitality meal in lieu of these savings, up to 40% of the
+amount of the USG per diem lodging. The Notes section of the submitted expense should clearly outline the
+situation and the savings.
+Example: John travels to New York in July and stays with his brother. The USG per diem lodging for NYC
+is $216. They go out to dinner, and John's brother's portion of the bill is $100. Blackbaud reimburses
+John for $86.40 (40% of $216) and John (or his brother) is responsible for $13.60. John (and his brother)
+has saved Blackbaud nearly $130.
+Travelers often choose low cost options which invoke incremental, incidental expenses. In this circumstance,
+Blackbaud will reimburse travelers for incidental expenses of less than $20 per day assuming the low cost option
+plus $20 is less than the standard option. The Notes section of the submitted expense should clearly outline the
+situation.
+Example: John travels to New York in July and is eligible to book a hotel with a gym for $216. He
+identifies a suitable hotel for $125, but it has no gym. John pays $15 to a nearby health club for a daily
+pass. His total lodging cost including gym was $140. Blackbaud reimburses John for $140, and saves
+$76.
+
+6. RENTAL CARS
+
+POLICY
+As explained in Section 2, employees with Corporate Travel Credit Cards are expected to pay all business -related
+rental car fees on that card.
+
+Cars should be rented by employees when other means of transportation are unavailable, more costly, or
+impractical.
+• Internationally, and in large domestic cities, public transportation and taxis are often more convenient and
+cost efficient and are therefo re the preferred alternative. When traveling internationally, it is strongly
+recommended that cars are not rented.
+• Employees should share rides when travel plans allow.
+
+• Fines, citations, or other charges that are the result of improperly operating or parking the rental vehicle are
+not reimbursable by the Company.
+
+Travelers are not reimbursed for fees associated with GPS devices or other accessories.
+
+INSURANCE
+All employees using rental automobiles (or personal car) for business purposes are expected to review the Driver's
+Safety Training video available on the Travel page on Meebee.
+(http://meebee/BBSites/BBTravelers/Pages/BBTravelers.aspx )
+
+U.S. EMPLOYEES
+The Corporate Travel Credit Card provides insurance for damage to or loss of a rental automobile due to a collision,
+fire, theft, or vandalism, even for loss of use, towing expenses, and items that are not permanently installed in the
+vehicle, but itemized in the rental agreement. If the employee purchases additional coverage, it is not reimbursable.
+
+The employee must ensure that the "Blackbaud, Inc." name also appears on the rental agreement. This will ensure
+the Blackbaud's insurance coverage will be valid in certain instances. This should automatically occur through
+Concur, but it is the employee's responsibility to verify this at the time of rental.
+
+Non-US and CANADA EMPLOYEES
+Third-party liability insurance needs to be purchased from the rental car agency if tr aveling outside of your country
+of employment.
+
+SIZE LIMIT/EXTRA AMMENITIES
+All employees are expected to book Intermediate or Mid -sized cars. Blackbaud will not reimburse for larger size
+vehicles unless as specified below, in Section E "Upgrades". GPS navigation systems and satellite radio are not
+reimbursable.
+
+UPGRADES
+Travelers may book a category one-level higher only if one of the following applies:
+1. When two or more Blackbaud employees are traveling together
+2. When entertaining customers
+3. When cars in an authorized category are not available
+4. When the employee can be upgraded at no extra cost
+5. When transporting excess baggage such as Company equipment
+
+Travelers should state which of the above applies when submitting expenses in Concur.
+
+If a traveler is upgraded by the rental car company at no additional cost (i.e., a full size car at an intermediate rate),
+s/he will be reimbursed at the allowable rate.
+
+REFUELING
+The advanced fuel/petrol purchase option should be declined in all ca ses. The car should be returned with the
+gas/petrol tank full (i.e., fill the tank prior to arrival at the rental return location) whenever possible.
+
+ACCIDENTS
+
+In the event of a rental car accident, the employee should immediately contact the rental car agency and local
+authorities, as required. Appropriate documentation should subsequently be provided to the Travel Desk at
+travel@blackbaud.com and the rental car company as soon as reasonably possible.
+
+If employees need to file any claims for losses not covered by the Corporate Travel Credit Card, they should
+contact the Travel Desk at travel@blackbaud.com within 10 days of the incident for instructions on how to file
+these claims. If injury to employee occurs during work related travel, HR Benefits should be contacted at
+Benefits@blackbaud.com within 5 days. Failure to report claims within this allotted time frame may result in non -
+reimbursement to the employee. Employees are also required to follow-up on the status of claims and are
+required to keep the Travel Desk abreast of the situation.
+
+If another driver in the accident is at fault, the employee is responsible for obtaining the information of the other
+driver(s) including their name, address, and insurance information (most states require the other driver to provide
+you with this information).
+
+7. OTHER TRANSPORTATION
+
+PERSONAL CAR USAGE
+Authorized employees will be reimbursed for business usage of personal cars subject to the following guidelines:
+• Reimbursement rates are included in the Mileage App in Concur, and updated by Finance. Reimbursement
+can only occur as a result of calculating the distance in the Mileage App. Reimbursement rates are meant
+to cover all expenses associated with use of a personal car including gas, maintenance/repairs, etc. (Gas,
+maintenance/repairs, traffic/parking tickets, etc. will not be additionally reimbursed.)
+• Additional charges for parking and tolls will be reimbursed separately.
+• Use good judgment when parking personal automobiles such that you are being a good steward of the
+company resources but never compromising your personal safety.
+• The use of short-term parking should be minimized and used only in emergencies or for safety reasons.
+• Travel from an employee's residence to his/her normal place of employment is not a reimbursable expense.
+• Travel from an employee's residence to/from airports is reimbursable for non -office based employees.
+Mileage or expenses that are incremental to an office -based emp loyee's daily commute from that
+employee's residence to the office are reimbursable when traveling to/from airports.
+
+Employees are required to maintain liability insurance coverage in accordance with prevailing state laws. Any
+increases in the employee's insurance premiums as a result of accidents occurring while on company business are
+the responsibility of the employee and are not reimbursable.
+
+For travel where the round trip travel distance exceeds 500 miles (800 km), personal car mileage may not be
+reimbursed -- rental cars are expected to be used unless the traveler is flying or taking a train.
+
+RAIL
+Amtrak can be reserved on Concur. N on U.S. rail travel can be facilitated by contacting the Travel Desk.
+Alternatively, travelers can book non-U.S. rail directly (i.e., outside of the Concur portal).
+
+TAXIS
+Reimbursement is limited to expenses incurred for business purposes. Tip s in excess of 10% or $1.00 -- whichever is
+greater -- may not be reimbursed.
+
+PRIVATE CAR SERVICES
+This service is not normally reimbursable thru Blackbaud and should only be used when valid business reasons
+preclude the use of more economical modes of transportation. Such expenses will necessarily be substantiated at
+
+the time of submitting an expense. (We recognize that in some cities, including New York, car services are a
+prevalent form of airport transfer. To be clear, car services at comparable rates to taxis are a reimbursable expense;
+limousines are not reimbursable.)
+
+8. MEALS AND ENTERTAINMENT
+
+POLICY
+While traveling on company business travelers are reimbursed for meals. When multiple employees attend a meal
+while on travel, the highest ranking employee in attendance should pay the bill and submit it for reimbursement. If
+circumstances prevent the highest ranking employee in attendance to pay the bill, is still required that the highest
+ranking employee's manager approve the expense report on which the bill was submitted for reimbursement.
+
+Be advised that the maximum gratuities allowed are 20% of pre-tax food and beverage charges. Any amount above
+the 20% will not be reimbursed.
+
+PERSONAL MEALS
+Employees should normally select restaurants which are reasonably priced for the location.
+
+These costs will be reimbursable only when they meet IRS guidelines (http://www.irs.gov/taxtopics/tc511.html) or
+the guidelines of your national revenue tax authority as applicable, and are accompanied by an adequate receipt
+and documentation. It is not the intent of Blackbaud to provide meals that are lavish or extravagant. Therefore, as
+a guideline for all travelers, the amount spent on meals that are part of the normal course of business travel should
+not exceed U.S. Government per diem rates for meals and incidentals (M&IE):
+
+please refer to this document for per diem rates.
+http://meebee/BBSites/BBTravelers/Documents/Client%20Facing%20Travel%20Policy.pdf
+
+BUSINESS MEALS
+Cost of food and beverages, including reasonable gratuities, for more than one individual under circumstances
+generally considered conducive for business discussions are reimbursable. As for personal meals, restaurants
+should be reasonably priced for the location. These costs will be reimbursable only when they meet IRS guidelines
+(same as previous) or the guidelines of your national revenue tax authority as applicable, and are accompanied by
+an adequate receipt (readably auto loaded into Concur is accept able), documentation, and explanation as to the
+person's present business relationship, names of attendees and nature of business discussed.
+
+ENTERTAINMENT
+POLICY
+The expense of entertaining existing or potential clients or other third parties with whom Blackbaud has an important
+business relationship is reimbursable when such entertainment serves a business purpose and when expenditures
+are reasonable in relation to the number of people entertained and the potential benefits to be derived. Costs w ill
+be reimbursable on the same terms and conditions as business meals.
+
+TICKETS FOR SPORTING EVENTS, THEATER, ETC...
+Tickets for sporting events, theater, or other social events are not reimbursable unless prior approval has been
+obtained from the CFO.
+
+MEMBERSHIP DUES
+Airline Club, Rental Car, and Hotel Memberships are not reimbursable unless authorized by the Controller or CFO.
+
+9. TELECOMMUNICATIONS
+CELL PHONES
+The cell phone policy for travelers is available on the Meebee travel site.
+
+HOTEL TELEPHONE USAGE
+These charges are reimbursable with a receipt for business purposes only.
+
+HOTEL FAX USAGE
+These charges are reimbursable with a receipt for business purposes only. Telegraph, carrier pigeon, and flag
+semaphore expenses are not reimbursable.
+
+HOTEL INTERNET USAGE
+These charges are reimbursable.
+
+10. EXPENSE REPORTS AND REIMBURSEMENT
+GENERAL POLICY
+1. Concur is our expense tool of record, and as such expense reports must be submitted through Concur,
+regardless of whether the employee is a frequent traveler using his/her Corporate Travel Credit Card or an
+infrequent traveler using a personal credit card.
+2. All travelers will need to enter their bank deposit information in Concur for reimbursement of cash expenses
+(and other reimbursable expenses appropriately outside of the Corporate Travel Credit Card)
+3. Expense reports should be submitted by the traveler within 14 calendar days of completion of a trip. For
+instances of travel longer than 2 weeks, expense reports should be submitted by the traveler within 5 calendar
+days of the completion of a two week segment of that longer trip. This practice keeps our expense processing
+current and helps to prevent errors through entry of large numbers of receipts. Failure to comply may result in
+traveler not being reimbursed..
+• Example 1: Travel from January 2 to 5. Expense report due by 5pm on January 19.
+• Example 2: Travel from January 2 to 31. Expense reports are due by 5pm on January 21 and 5pm
+on February 5.
+4. Managers must review expense reports within 10 days of submission. If your manager does/cannot review in
+that time frame, the report will be forwarded to his/her manager.
+5. Blackbaud will pay directly to the Corporate Travel Credit Card company the amount owed for reimbursable
+expenses after manager approval. Blackbaud will pay the traveler directly for approved, reimbursable out -of-pocket expenses.
+6. All non-reimbursable expenses on the Corporate Travel Credit Card are the responsibility of the employee, to
+be paid in accordance with the card's terms and conditions. Employee failure to pay could result in disciplinary
+action.
+
+GENERAL INFORMATION
+1. Receipts are required for expenses as follows:
+• Expenses incurred on Corporate Travel Card: Receipts required for air, hotel & rental car expenses, and
+for $75 and higher on all other expenses. Detailed electronic receipts showing breakdown for expenses
+are acceptable. This is enabled within Concur requesting electronic receipts.
+• Cash Expenses (or expenses on other charge cards): Receipts required for $25 and higher
+
+Receipts may be uploaded as a picture from the Concur mobile application. Employees are responsible for
+retaining a copy (or original) of the receipt for your own records and future validation, as requested.
+
+2. For future reconciliation purposes, paper receipts should be kept until all charges on the expense report have
+been paid.
+3. Blackbaud has the right to audit any submitted expense reports at any time and in perpetuity.
+4. As stated in several sections above, all employees in possession of a Corporate Travel Credit Card should use
+it for all travel-related expenses unless otherwise noted.
+5. Recurring monthly Software expenditures and employee gifts should not be submitted via expense reports.
+The employee should establish a direct bill relationship betw een the vendor and AP or utilized a Corporate
+Department Credit Card.
+6. The Corporate Travel Credit Card provides a 24/7 roadside assistance benefit for $59.95 per service call.
+Please see Travel Meebee site for more information on this service.
+
+APPENDIX A- Reimbursable Expenses
+
+NON-REIMBURSABLE EXPENSES
+Personal expenses while traveling are not reimbursable by Blackbaud. The foregoing list should not be considered
+all-inclusive. Each questionable item will be reviewed individually as to appropriateness.
+Hotel movies, games,
+and other discretionary charges
+• Tobacco
+• Babysitting or child care services, pet boarding
+• Purchase of merchandise which may be used personally subsequent to a trip, such as a shirts, toiletries or
+novelty items
+Personal grooming costs such as barber/hairdresser and shoeshine
+• Personal reading material
+• Recreational activities while on a business trip which are not part of the scheduled business activities
+• Loss of personal property while on Company business
+• Loss of cash advance, Company paid airline tickets, or personal funds
+• Cost of personal credit cards
+• Vacation expenses such as sightseeing, bus tours, souvenirs
+• Health club fees, saunas, or massages while on business travel, unless a best value decision
+• Corporate charge card delinquency fees and finance charges
+• Golf fees (when not part of customer entertainment or planned team outing approved in advance)
+• Costs of duties levied on items through the customs process
+
+REIMBURSABLE EXPENSES
+In addition to the types of expenses in body of the Travel Policy, the following types of expenses if incurred in
+compliance with Blackbaud policy may be submitted for reimbursement:
+• Airport taxes
+• Copy services (for business purposes)
+• Currency Conversion
+• Fax charges (for business purposes)
+• Laundry/dry cleaning/valet: for trips in excess of 5 days
+• Tips: 20% at restaurants, $1 per bag, $2 per night for hotel maid service
+• Tolls
+• Parking structure
+• Luggage allowances for 2 checked bags
+• Valet parking will be reimbursed when other reasonable options were not available
+
+APPENDIX B Expenses NOT to be charged to the Corporate Travel Credit
+Card or processed in Concur
+
+Anything that you wouldn't expect to appear in the category of travel expenses, including
+but not limited to:
+Gift cards
+• Software purchases
+• Subscriptions of any kind
+• Marketing expenses
+
+APPENDIX C
+Blackbaud Professional Services Travel Policy (Revised: May 2013)
+
+GENERAL POLICY
+Blackbaud's business travelers adhere to widely -published U.S. Government per diem rates, updated periodically to
+reflect changing market dynamics.
+
+BILLABLE EXPENSE POLICY
+
+Lodging
+Blackbaud travelers book U.S. and non -U.S. hotels based upon currently published U.S. Government per diem
+rates for lodging.
+
+please refer to this document for per diem rates.
+http://meebee/BBSites/BBTravelers/Documents/Client%20Facing%20Travel%20Policy.pdf
+
+Meals and Incidentals (M&IE)
+Blackbaud travelers expense daily M&IE expenses at or below those currently published by the U.S. government:
+
+please refer to this document for per diem rates.
+http://meebee/BBSites/BBTravelers/Documents/Client%20Facing%20Travel%20Policy.pdf
+
+Air Travel
+Blackbaud requires its travelers to book and pay for travel using its corporate travel systems. There are no
+exceptions to this policy. Our travelers seek to achieve the most advantageous rates at the lowest costs, and their
+choices are thus limited in our Concur booking system.
+
+Rental car and auto mileage
+Blackbaud travelers seek timely travel, least cost options. The cost of auto and other conventional transportation
+used by employees are reimbursable business expenses and will be billed at actual cost to the client. Blackbaud
+travelers are required to book cars no larger than "intermediate", unless there is more than one traveler in a party.
+
+Blackbaud's auto mileage rate for personal auto usage is $0.56 per mile. These costs are reimbursable expenses
+and will be billed at actual costs to the client.
+
+Other expenses
+These costs are reimbursable expenses and will be billed at actual costs to the client.
+• Laundry is reimbursable for travel of more than one week.
+• Hotel telephone charges for Internet and email access are reimbursable expenses.
+
+APPENDIX D
+Blackbaud Driving Policy
+
+Table of Contents
+
+I. INTRODUCTION................................................................................................................. ............................................
+......................................... 21
+II. BLACKBAUD RESPONSIBILITIES
+........................................................................................................................................................................ 21
+III. EMPLOYEE RESPONIBILITIES
+........................................................................................................................................................................ 21
+A. Training
+....................................................................................................................................................................................................
+.......... 21
+B. When an Employee is on Company Business
+............................................................................................................................................... 21
+C. Driving Techniques and
+Requirements................................................................................................................. .......................................... 22
+D. Impaired Driving
+........................................................................................................................................................................................
+........ 22
+E. Driving a Company Vehicle
+.............................................................................................................................................................................. 22
+F. Driving a Rental Vehicle on Company
+Business............................................................................................................................................ 23
+G. Driving Personal Vehicles on Company Business
+........................................................................................................................................ 23
+H. Wireless Device Use
+......................................................................................................................................................................................... 23
+I. Using Navigation/GPS Units
+............................................................................................................................................................................ 23
+
+IV. POST-ACCIDENT PROCEDURES
+.................................................................................................................................................................... 23
+BLACKBAUD DRIVING POLICY ACKNOWLEDGEMENT FORM
+.................................................................................................................................. 24
+1 INTRODUCTION
+
+With the establishment of this policy, Blackbaud seeks to promote a safe driving culture by keeping our employees and
+other drivers as safe as possible, while reducing the likelihood of accidents and such related costs. This policy applies to
+all employees of Blackbaud, located in North America, regardless of whether the Employee is driving a company vehicle, a
+rental car, or a personal automobile while in the course of company business. It is a requirement for all employees to follow
+safe driving practices, defensive driving principles, and driving regulations.
+
+2 BLACKBAUD RESPONSIBILITIES
+
+Blackbaud requires staff to drive under safe conditions. We will do this by:
+
+• Maintaining adequate insurance coverage;
+• Ensuring that staff are aware of their responsibility to check their vehicles prior to use;
+• Ensuring that where additional training is required, it will be provided;
+• Collecting statistics on accidents to ensure continuous improvement of our driving policy; and
+• Annually reviewing Black baud Driving Policy to ensure the policies are adequately developed and provide for the
+highest safety of our employees and others on the road.
+
+Any questions or concerns regarding this driving policy should be addressed to Human Resources.
+
+3 EMPLOYEE RESPONSIBILITIES
+
+Safe driving is an essential job requirement for all Blackbaud employees. Each employee is responsible for complying with
+the policies and procedures listed in this manual. Failure to comply with any aspect of this Blackbaud Driving Policy will
+result in disciplinary action, up to and including termination of employment.
+
+All employees who may drive in the course of Blackbaud business must have a current and valid driver's license.
+
+Drivers with more than six (6) points on their driving record may not drive in the furtherance of company business. It is the
+Employee's responsibility to inform his supervisor and human resources in writing if he exceeds the six point allowance.
+Once the Employee's driving record returns to conformity with this policy, he should again inform his supervisor and human
+resources in writing of his record's improvement and his ability to drive for company business. In the event that the abilit y
+to drive is a requirement for an Employee's job, if his driving record exceeds six (6) points, he may face disciplinary actions,
+up to and including termination of employment.
+
+A. Training
+
+All employees who will drive on company business are required to watch the Driver's Safety video upon hire. Additionally,
+if an Employee is found at-fault in an accident or traffic incident, then he will be required to go through Remediation Training
+by re-watching the video and then informing his supervisor and The General Counsel's Office of his completion of this
+requirement.
+
+The Driver's Safety Video is located at http://meebee/BBSites/BBTravelers/Pages/BBTravelers.aspx.
+
+B. When an Employee is on Company Business
+
+This policy does not just apply to those employees who are regular travelers. There are many scenarios where an Employee
+can be driving his own vehicle and be considered driving in the "course and scope of his employment". The following are a
+short list of examples where an Employee is driving in the course of his employment, and is therefore required to follow the
+prescripts of the Blackbaud Driving Policy. This list is not intended to be all inclusive nor exhaustive.
+
+• An Employee driving to visit a customer location.
+• An Employee driving a rental or personal car to a meeting.
+• An Employee driving either a company vehicle or a personal car to pick up office supplies.
+• An on-call Employee traveling back and forth to work.
+• An Employee is out picking up lunch for a team event.
+
+C. Driving Techniques and Requirements
+
+The list below sets forth the driving requirements for any Employee who is driving in the course of Blackbaud business.
+This list is not exhaustive, and employees are encouraged to adopt additional driving practices that would make their drive
+safer. Any Employee who fails to follow these requirements will be subject to appropriate disciplinary action. Continuous
+disregard for these rules will lead to further disciplinary action, up to and including termination. Employees who drive on
+company business must:
+
+• Maintain a current and valid driver's license;
+• Immediately notify their manager if their driver's license has been suspended, cancelled, or has limitations placed
+on it;
+Stop driving when tired;
+• Assess driving hazards and anticipate "what if scenarios";
+• Follow all road signs, signals, and roadway markings;
+• Be conscious of adverse weather conditions and follow careful traffic practices;
+• Wear a safety belt and require passengers to do the same;
+• Drive within the legal and posted speed limits;
+• Comply with traffic legislation;
+• Always drive with the vehicle headlights on at night or in adverse weather conditions;
+• Do not use a mobile phone or any wireless device when driving - See instructions for cell phone use;
+• Check vehicle prior to the journey to ensure that vehicles are within safe operating conditions;
+• Take regular and adequate rest breaks;
+• Plan journey ahead, taking into consideration pre -journey work duties, the length of the trip and post journey
+commitments;
+Take a taxi, train, or bus when returning from long haul flights; and
+Ensure
+familiarity with the vehicle to be driven.
+
+D. Impaired Driving
+
+An Employee may not operate a motor vehicle at any time when his ability is impaired, affected, or influenced by alcohol,
+illegal drugs, medication, illness, fatigue, or injury. If an Employee is unable to drive due to his impaired state, he must not
+drive and inform his supervisor as necessary.
+
+Any Employee convicted of dr iving under the influence of alcohol or illegal drugs or medication in the year prior to
+employment or after employment may be ineligible to drive in furtherance of company business.
+
+If an Employee is convicted of driving under the influence of alcohol or illegal drugs or medication while driving in furtherance
+of company business, the Employee will face disciplinary actions, up to and including termination of employment.
+
+E. Driving a Company Vehicle
+
+Blackbaud has two company vehicles on site at the Daniel Island Headquarters. When driving a company vehicle,
+employees must follow the same rules and regulations as listed in Driving Techniques and Requirements above and adhere
+to the policies outlined in Facilities for checking out the vehicle.
+
+Also, any citations received while driving must be taken care of promptly by the driver. It is the driver's responsibility t o
+inform his manager and the Director of Facilities of any citation received while driving the company vehicle. If a drunk or
+reckless driving citation is received, the driver will be disqualified from continued use of a Company automobile and may
+receive corrective action, up to and including termination.
+
+Company vehicles are for use in furthering business purposes only. Only those authorized to drive the vehicle can remove
+the vehicle from the Blackbaud parking lot. Any unauthorized use of the vehicle will result in disciplinary action, up to an d
+including termination. Additiona lly, if an accident occurs while an unauthorized person is driving the vehicle, the
+unauthorized driver may be required to make restitution for the physical damages to the company vehicle, as well as assume
+all responsibility for injury to persons and damage to property as a result of the incident.
+
+F. Driving a Rental Vehicle on Company Business
+
+When driving a rental car, employees are advised to follow the Driving Techniques and Requirements as listed above. It is
+required that when renting a vehicle, the Employee uses his company credit card. The reason this is the preferred method
+of payment is because the corporate credit card provides insurance for damage to or loss of a rental automobile due to a
+collision, fire, theft, or vandalism. Additionally, it covers the loss of use, towing expenses, and items that are not permanently
+installed in the vehicle, but itemized in the rental agreement.
+
+Further, employees must report any vehicle defects to the Rental Car Company as soon as they become aw are of the
+problem.
+
+G. Driving Personal Vehicles on Company Business
+
+When an Employee drives his personal vehicle for business purposes he has a duty to maintain the vehicle and drive with
+the same caution as is necessary with a rental or company car - See Driving Techniques and Requirements above.
+Blackbaud will not accep t liability for any damage that is caused to a privately owned vehicle. Listed below are basic
+guidelines for each Employee to follow:
+
+• Employee must maintain liability coverage on his vehicle up to the limits required by his state's law;
+• Employee must ensure that his insurance covers business travel;
+• Employees may only drive legally registered vehicles on company business; and
+• Employee must maintain current state vehicle inspections if the state requires one.
+
+H. Wireless Device Use
+
+Blackbaud employees are prohibited from using their mobile phone, Blackberry, or other wireless communications device
+while operating a motor vehicle for company business, unless in a hands-free mode, or as otherwise regulated by state law.
+
+I. Using Navigation/GPS Units
+
+While Blackbaud does not reimburse employees for the purchase or rental of a Navigation/GPS unit, they can be helpful to
+prevent an Employee from getting lost. However, such units can serve as a major distraction and force the driver's attention
+and eyes off the road. When using a Navigation/GPS Unit, the Employee must:
+
+• Use extra caution when viewing the Navigation/GPS screen by making only short glances when the vehicle is
+moving;
+• Increase the following distance when viewing the screen and looking for street signs, addresses, etc.; and
+• Only enter or change the destination address in the Navigation/GPS unit when the vehicle is at a complete stop.
+
+4 POST-ACCIDENT PROCEDURES
+
+If an Employee is involved in an accident, he should stop his vehicle at the scene or as close as is safe, always ensuring
+his safety first. Regardless of the magnitude of the accident, contact the police immediately to inform them of the incident
+and obtain a copy of the police report. The Employee must submit a copy of the police report to the Finance Department
+within 10 days of the incident or within 5 days if there are any bodily injuries.
+
+Additionally, never authorize repairs to the property of others or make commitments as to Blackbaud's responsibility.
+
+Blackbaud Driving Policy Acknowledgement Form
+
+I hereby acknowledge that I have received and read a copy of the Blackbaud Driving Policy. I agree to comply with the
+policies and procedures contained in this guide.
+
+Driver's Signature Date
+
+Driver's Name (Printed)
+
+Driver's Point Policy
+
+I, ________________________________, attest that I have a valid driver's license and I have no more than six (6)
+moving violation points on my driving record as of the date signed below and I carry personal auto insurance. I
+acknowledge I am violating company policy if I operate a vehicle in the furtherance of company business with more than
+six (6) points on my personal driving record and could be subject to termination. I further acknowledge that I am under a
+duty to inform my supervisor and human resources if I receive more than six (6) points on my record as well as when I fall
+below this number and regain my ability to drive in furtherance of company business.
+
+__________________________________________ ________________________
+Driver's Signature Date
+
+Driver's Name (Printed)
+
+This Policy is maintained by the Legal Department.

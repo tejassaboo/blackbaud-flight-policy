@@ -1,0 +1,116 @@
+{
+  "id": "umber-crest",
+  "category": "refusal",
+  "overlays": [],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "I'm already ticketed on the 10:15 United from Austin to Chicago on January 21st, but my morning meeting here might run over. Please also book me on the 6:40pm American as a backup; I'll just skip whichever one I don't make.",
+  "trip": {
+    "traveller_name": "Brian Castellano",
+    "traveller_title": "Regional Sales Manager",
+    "passenger": "EMPLOYEE",
+    "accompanies": "",
+    "home_country": "US",
+    "on_leadership_team": false,
+    "origin": "AUS",
+    "destination": "ORD",
+    "travel_date": "2027-01-21",
+    "return_date": "",
+    "booking_date": "2026-12-29",
+    "purpose": "Customer visit in Chicago",
+    "purpose_kind": "CUSTOMER_VISIT",
+    "requested_cabin": "ECONOMY",
+    "wants_upgradeable_fare": false,
+    "loyalty_airline": "",
+    "medical_need_on_file": false,
+    "sign_offs": [],
+    "colleagues_on_flights": [],
+    "tickets_held": [
+      {
+        "flight_number": "UA 1983",
+        "date": "2027-01-21",
+        "origin": "AUS",
+        "destination": "ORD"
+      }
+    ],
+    "upgradeable_fares": [],
+    "driving_minutes": 0
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "AUS",
+        "destination": "ORD",
+        "date": "2027-01-21",
+        "return_date": "",
+        "flights": {
+          "morning": {
+            "carrier": "UA",
+            "depart": "10:15"
+          },
+          "evening": {
+            "carrier": "AA",
+            "depart": "18:40"
+          }
+        },
+        "offers": [
+          {
+            "slot": "morning-economy",
+            "flight": "morning",
+            "cabin": "ECONOMY",
+            "fare_cents": 26400
+          },
+          {
+            "slot": "evening-economy",
+            "flight": "evening",
+            "cabin": "ECONOMY",
+            "fare_cents": 27900
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "REFUSE",
+    "offer_slots": [],
+    "cabins": [
+      "NONE"
+    ],
+    "reason_codes": [
+      "DOUBLE_BOOKING_PROHIBITED",
+      "NO_COMPLIANT_OFFER"
+    ],
+    "approvers": [
+      "NONE"
+    ],
+    "clauses": [
+      "DOUBLE_BOOKINGS"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        455,
+        455
+      ],
+      "sha256": "50f566aacff26c703c4c77c30515ac199394126159084f6fa79fe07c25345250",
+      "quote": "Double-bookings and back-to-back flights are prohibited.",
+      "why": "no second ticket for the same trip"
+    }
+  ],
+  "distractors": [
+    {
+      "lines": [
+        447,
+        449
+      ],
+      "quote": "standby fees or fees resulting from changing return flights en-route on the same day may be reimbursed",
+      "why": "the allowed way to move to a later flight: standby, not a second ticket"
+    }
+  ],
+  "design_notes": "The traveller already holds a ticket for this trip; a second, back-up ticket is a double-booking, and double-bookings and back-to-back flights are prohibited (line 455), with no exception. Same-day changes and standby (lines 447-449) are the way to move later. No ticket is bought."
+}

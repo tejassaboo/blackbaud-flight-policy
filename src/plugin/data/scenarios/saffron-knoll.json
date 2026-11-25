@@ -1,0 +1,149 @@
+{
+  "id": "saffron-knoll",
+  "category": "distractor",
+  "overlays": [],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Charlotte to Atlanta on February 4th for the customer workshop. I did think about driving, it's about three hours forty-five each way and roughly 490 miles there and back, but I'd lose most of the day, so I'd rather fly. Cheapest economy please.",
+  "trip": {
+    "traveller_name": "Marcus Lee",
+    "traveller_title": "Implementation Consultant",
+    "passenger": "EMPLOYEE",
+    "accompanies": "",
+    "home_country": "US",
+    "on_leadership_team": false,
+    "origin": "CLT",
+    "destination": "ATL",
+    "travel_date": "2027-02-04",
+    "return_date": "",
+    "booking_date": "2027-01-14",
+    "purpose": "Customer workshop in Atlanta",
+    "purpose_kind": "CUSTOMER_VISIT",
+    "requested_cabin": "ECONOMY",
+    "wants_upgradeable_fare": false,
+    "loyalty_airline": "",
+    "medical_need_on_file": false,
+    "sign_offs": [],
+    "colleagues_on_flights": [],
+    "tickets_held": [],
+    "upgradeable_fares": [],
+    "driving_minutes": 225
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "CLT",
+        "destination": "ATL",
+        "date": "2027-02-04",
+        "return_date": "",
+        "flights": {
+          "early": {
+            "carrier": "AA",
+            "depart": "07:20"
+          },
+          "delta": {
+            "carrier": "DL",
+            "depart": "08:05"
+          },
+          "evening": {
+            "carrier": "AA",
+            "depart": "17:45"
+          }
+        },
+        "offers": [
+          {
+            "slot": "early-economy",
+            "flight": "early",
+            "cabin": "ECONOMY",
+            "fare_cents": 18900
+          },
+          {
+            "slot": "delta-economy",
+            "flight": "delta",
+            "cabin": "ECONOMY",
+            "fare_cents": 17600
+          },
+          {
+            "slot": "evening-economy",
+            "flight": "evening",
+            "cabin": "ECONOMY",
+            "fare_cents": 21300
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "delta-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "LOWEST_FARE"
+    ],
+    "approvers": [
+      "NONE"
+    ],
+    "clauses": [
+      "CLASS_OF_SERVICE",
+      "DOMESTIC_CLASS",
+      "LOWEST_AIRFARE",
+      "AIR_TRAVEL_GENERAL"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        382,
+        384
+      ],
+      "sha256": "e206e7522ac17fe21c9aef6b4bcdeb98b6fb09870fd995e38284080d53caf23f",
+      "quote": "Air travel should be considered the last alternative after all other options to conduct business have been considered (i.e. Video/Telecommunications conferencing, e-mail, or telephone). If the destination is under four hours of driving time, consideration must be given to driving instead of flying.",
+      "why": "driving under four hours must be considered, not chosen"
+    },
+    {
+      "lines": [
+        412,
+        413
+      ],
+      "sha256": "0ea98a0850a6685d5951a616caa1d77a35294515b0127754fc78d8d74bed3fb3",
+      "quote": "All airline tickets must be booked at the lowest available airfare as determined by Concur or the Travel Desk (subject to the parameters defined in this section).",
+      "why": "the default: the lowest available airfare"
+    },
+    {
+      "lines": [
+        397,
+        398
+      ],
+      "sha256": "9196c9549884b229000130b9bfacd66a84544d3f7ed8469054f192d4d5c669c9",
+      "quote": "Our policy is that domestic air purchases are coach class, regardless of flight time, and booked via nonrefundable tickets.",
+      "why": "domestic trips are coach, whatever the flight time"
+    }
+  ],
+  "distractors": [
+    {
+      "lines": [
+        664,
+        665
+      ],
+      "quote": "For travel where the round trip travel distance exceeds 500 miles (800 km), personal car mileage may not be reimbursed",
+      "why": "a distance rule for personal-car mileage, not for flying"
+    },
+    {
+      "lines": [
+        472,
+        473
+      ],
+      "quote": "Wi-Fi in flight (GOGO)-is reimbursable ONLY for flights over 1.5 hours.",
+      "why": "a flight-length rule for Wi-Fi fees, not for the cabin"
+    }
+  ],
+  "design_notes": "The drive is under four hours, so driving 'must be considered' (lines 383-384); the traveller has considered it and flies, which the clause allows. The 500-mile personal-car rule (lines 664-665) is about mileage, not flying. The lowest available airfare."
+}

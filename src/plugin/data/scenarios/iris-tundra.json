@@ -1,0 +1,155 @@
+{
+  "id": "iris-tundra",
+  "category": "boundary_twin",
+  "overlays": [
+    "multi_leg"
+  ],
+  "twin_of": "heron-bluff",
+  "twin_fact": "connections through Miami (380 flying, 480 elapsed) or Houston (500 flying minutes)",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "I need to get from Boston to Bogota on March 2nd for the implementation workshop. Alan, my VP, signed off on business class in advance. Please book business.",
+  "trip": {
+    "traveller_name": "Lucia Ferrante",
+    "traveller_title": "Principal Consultant",
+    "passenger": "EMPLOYEE",
+    "accompanies": "",
+    "home_country": "US",
+    "on_leadership_team": false,
+    "origin": "BOS",
+    "destination": "BOG",
+    "travel_date": "2027-03-02",
+    "return_date": "",
+    "booking_date": "2027-02-01",
+    "purpose": "Customer implementation workshop in Bogota",
+    "purpose_kind": "CUSTOMER_VISIT",
+    "requested_cabin": "BUSINESS",
+    "wants_upgradeable_fare": false,
+    "loyalty_airline": "",
+    "medical_need_on_file": false,
+    "sign_offs": [
+      {
+        "role": "VICE_PRESIDENT",
+        "name": "Alan Prescott",
+        "subject": "BUSINESS_CLASS"
+      }
+    ],
+    "colleagues_on_flights": [],
+    "tickets_held": [],
+    "upgradeable_fares": [],
+    "driving_minutes": 0
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "BOS",
+        "destination": "BOG",
+        "date": "2027-03-02",
+        "return_date": "",
+        "flights": {
+          "morning": {
+            "carrier": "AA",
+            "via": [
+              "MIA"
+            ],
+            "depart": "06:15",
+            "minutes": [
+              175,
+              205
+            ],
+            "layovers": [
+              100
+            ]
+          },
+          "midday": {
+            "carrier": "AA",
+            "via": [
+              "MIA"
+            ],
+            "depart": "12:05",
+            "minutes": [
+              175,
+              205
+            ],
+            "layovers": [
+              100
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "morning-economy",
+            "flight": "morning",
+            "cabin": "ECONOMY",
+            "fare_cents": 58900
+          },
+          {
+            "slot": "morning-business",
+            "flight": "morning",
+            "cabin": "BUSINESS",
+            "fare_cents": 205000
+          },
+          {
+            "slot": "midday-economy",
+            "flight": "midday",
+            "cabin": "ECONOMY",
+            "fare_cents": 60400
+          },
+          {
+            "slot": "midday-business",
+            "flight": "midday",
+            "cabin": "BUSINESS",
+            "fare_cents": 219000
+          }
+        ],
+        "background": 0
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "morning-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "LONG_FLIGHT_CONDITION_NOT_MET",
+      "LOWEST_FARE",
+      "UPGRADE_NOT_ELIGIBLE"
+    ],
+    "approvers": [
+      "NONE"
+    ],
+    "clauses": [
+      "CLASS_OF_SERVICE",
+      "INTERNATIONAL_CLASS",
+      "LOWEST_AIRFARE"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        402,
+        404
+      ],
+      "sha256": "0ec78811b20ff2aa881511085a213b64e2be7670afbec07bbc096ba5062d8c4d",
+      "quote": "International travel is to be by lowest possible airfare available. Any international travel exceeding 8 hours (whether a single segment or multiple segments combined) can be booked in an upgradeable fare or, with the prior approval of the traveler's Vice-President, in business class.",
+      "why": "the international rule: lowest fare; business over 8 hours with the Vice-President's prior approval"
+    },
+    {
+      "lines": [
+        412,
+        413
+      ],
+      "sha256": "0ea98a0850a6685d5951a616caa1d77a35294515b0127754fc78d8d74bed3fb3",
+      "quote": "All airline tickets must be booked at the lowest available airfare as determined by Concur or the Travel Desk (subject to the parameters defined in this section).",
+      "why": "the default: the lowest available airfare"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "Only connections through Miami: 175 + 205 = 380 flying minutes and 480 minutes from first departure to last arrival with the 100-minute connection. Even counting the ground time the travel does not exceed 480, so business is not available; the lowest possible airfare."
+}

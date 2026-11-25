@@ -1,0 +1,145 @@
+{
+  "id": "basil-cove",
+  "category": "easy",
+  "overlays": [
+    "multi_leg"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Can you book me Boston to Phoenix on January 12th for the customer kickoff? I don't mind a connection if it saves money.",
+  "trip": {
+    "traveller_name": "Owen Pruitt",
+    "traveller_title": "Account Executive",
+    "passenger": "EMPLOYEE",
+    "accompanies": "",
+    "home_country": "US",
+    "on_leadership_team": false,
+    "origin": "BOS",
+    "destination": "PHX",
+    "travel_date": "2027-01-12",
+    "return_date": "",
+    "booking_date": "2026-12-14",
+    "purpose": "Customer kickoff meeting in Phoenix",
+    "purpose_kind": "CUSTOMER_VISIT",
+    "requested_cabin": "ECONOMY",
+    "wants_upgradeable_fare": false,
+    "loyalty_airline": "",
+    "medical_need_on_file": false,
+    "sign_offs": [],
+    "colleagues_on_flights": [],
+    "tickets_held": [],
+    "upgradeable_fares": [],
+    "driving_minutes": 0
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "BOS",
+        "destination": "PHX",
+        "date": "2027-01-12",
+        "return_date": "",
+        "flights": {
+          "nonstop": {
+            "carrier": "AA",
+            "depart": "08:00"
+          },
+          "denver": {
+            "carrier": "UA",
+            "via": [
+              "DEN"
+            ],
+            "depart": "06:30",
+            "layovers": [
+              70
+            ]
+          },
+          "atlanta": {
+            "carrier": "DL",
+            "via": [
+              "ATL"
+            ],
+            "depart": "09:15",
+            "layovers": [
+              85
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "nonstop-economy",
+            "flight": "nonstop",
+            "cabin": "ECONOMY",
+            "fare_cents": 36800
+          },
+          {
+            "slot": "denver-economy",
+            "flight": "denver",
+            "cabin": "ECONOMY",
+            "fare_cents": 29900
+          },
+          {
+            "slot": "atlanta-economy",
+            "flight": "atlanta",
+            "cabin": "ECONOMY",
+            "fare_cents": 31200
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "denver-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "LOWEST_FARE"
+    ],
+    "approvers": [
+      "NONE"
+    ],
+    "clauses": [
+      "CLASS_OF_SERVICE",
+      "DOMESTIC_CLASS",
+      "LOWEST_AIRFARE"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        412,
+        413
+      ],
+      "sha256": "0ea98a0850a6685d5951a616caa1d77a35294515b0127754fc78d8d74bed3fb3",
+      "quote": "All airline tickets must be booked at the lowest available airfare as determined by Concur or the Travel Desk (subject to the parameters defined in this section).",
+      "why": "the default: the lowest available airfare"
+    },
+    {
+      "lines": [
+        426,
+        429
+      ],
+      "sha256": "e0768a41aba1af732d5400d67f920967584fe0a261f1eef913b8d940696eccb6",
+      "quote": "For informational purposes, the following criteria are among those utilized to determine lowest available airfare: • Itineraries that include connecting flights are preferred where such itineraries result in the lowest fare, the routing requires no more than one layover (involving a plane change) each way, and such layover is no more than 2 hours",
+      "why": "a connection counts when it has at most one plane change of at most two hours"
+    },
+    {
+      "lines": [
+        397,
+        398
+      ],
+      "sha256": "9196c9549884b229000130b9bfacd66a84544d3f7ed8469054f192d4d5c669c9",
+      "quote": "Our policy is that domestic air purchases are coach class, regardless of flight time, and booked via nonrefundable tickets.",
+      "why": "domestic trips are coach, whatever the flight time"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "The cheapest fare is a one-stop connection with a 70-minute plane change, inside the criteria of lines 426-429, so it is the lowest available airfare."
+}

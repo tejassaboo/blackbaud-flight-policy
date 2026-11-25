@@ -1,0 +1,157 @@
+{
+  "id": "jasper-glen",
+  "category": "boundary_twin",
+  "overlays": [
+    "multi_traveller",
+    "outside_air_section"
+  ],
+  "twin_of": "kelp-meadow",
+  "twin_fact": "the third colleague on the 07:00 flight is a director, or a leadership-team member",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "I'm going Austin to Boston on January 19th for the leadership offsite in Cambridge. Book me the cheapest economy flight. Most of the team is already ticketed on the early JetBlue.",
+  "trip": {
+    "traveller_name": "Thomas Reyes",
+    "traveller_title": "Chief Revenue Officer",
+    "passenger": "EMPLOYEE",
+    "accompanies": "",
+    "home_country": "US",
+    "on_leadership_team": true,
+    "origin": "AUS",
+    "destination": "BOS",
+    "travel_date": "2027-01-19",
+    "return_date": "",
+    "booking_date": "2026-12-15",
+    "purpose": "Leadership offsite at the Cambridge office",
+    "purpose_kind": "INTERNAL_MEETING",
+    "requested_cabin": "ECONOMY",
+    "wants_upgradeable_fare": false,
+    "loyalty_airline": "",
+    "medical_need_on_file": false,
+    "sign_offs": [],
+    "colleagues_on_flights": [
+      {
+        "name": "Sandra Kim",
+        "title": "Chief Financial Officer",
+        "on_leadership_team": true,
+        "flight_number": "B6 1540",
+        "date": "2027-01-19"
+      },
+      {
+        "name": "Victor Hale",
+        "title": "Chief Technology Officer",
+        "on_leadership_team": true,
+        "flight_number": "B6 1540",
+        "date": "2027-01-19"
+      },
+      {
+        "name": "Nora Patel",
+        "title": "Director, Executive Programs",
+        "on_leadership_team": false,
+        "flight_number": "B6 1540",
+        "date": "2027-01-19"
+      }
+    ],
+    "tickets_held": [],
+    "upgradeable_fares": [],
+    "driving_minutes": 0
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "AUS",
+        "destination": "BOS",
+        "date": "2027-01-19",
+        "return_date": "",
+        "flights": {
+          "jetblue": {
+            "carrier": "B6",
+            "depart": "07:00"
+          },
+          "delta": {
+            "carrier": "DL",
+            "depart": "09:15"
+          },
+          "southwest": {
+            "carrier": "WN",
+            "depart": "11:40"
+          }
+        },
+        "offers": [
+          {
+            "slot": "jetblue-economy",
+            "flight": "jetblue",
+            "cabin": "ECONOMY",
+            "fare_cents": 28900
+          },
+          {
+            "slot": "delta-economy",
+            "flight": "delta",
+            "cabin": "ECONOMY",
+            "fare_cents": 31200
+          },
+          {
+            "slot": "southwest-economy",
+            "flight": "southwest",
+            "cabin": "ECONOMY",
+            "fare_cents": 33500
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "jetblue-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "LOWEST_FARE"
+    ],
+    "approvers": [
+      "NONE"
+    ],
+    "clauses": [
+      "CLASS_OF_SERVICE",
+      "DOMESTIC_CLASS",
+      "LOWEST_AIRFARE",
+      "TRAVELING_TOGETHER"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        286,
+        288
+      ],
+      "sha256": "63c9d4a4a12d2042d77db6a4b5bc5bad97b23baef1104d56448f35db57ad6283",
+      "quote": "In order to protect the human resources of Blackbaud, the number of Blackbaud employees traveling together on the same flight must not exceed three members of the Executive Leadership Team. An exception of this policy can only be approved by the CEO.",
+      "why": "at most three Executive Leadership Team members on one flight; only the CEO excepts"
+    },
+    {
+      "lines": [
+        412,
+        413
+      ],
+      "sha256": "0ea98a0850a6685d5951a616caa1d77a35294515b0127754fc78d8d74bed3fb3",
+      "quote": "All airline tickets must be booked at the lowest available airfare as determined by Concur or the Travel Desk (subject to the parameters defined in this section).",
+      "why": "the default: the lowest available airfare"
+    },
+    {
+      "lines": [
+        397,
+        398
+      ],
+      "sha256": "9196c9549884b229000130b9bfacd66a84544d3f7ed8469054f192d4d5c669c9",
+      "quote": "Our policy is that domestic air purchases are coach class, regardless of flight time, and booked via nonrefundable tickets.",
+      "why": "domestic trips are coach, whatever the flight time"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "Two leadership-team members and a director are on the 07:00 JetBlue; with the traveller that is three members of the Executive Leadership Team, which does not exceed three (lines 286-288): the cheapest fare."
+}

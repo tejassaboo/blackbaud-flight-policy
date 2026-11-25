@@ -1,0 +1,131 @@
+{
+  "id": "quill-aspen",
+  "category": "hidden_clause",
+  "overlays": [
+    "outside_air_section",
+    "companion"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Hi, I'm Elena Bell. I'm joining my husband Marcus at the customer conference in Orlando on March 3rd to help host the customers' spouses program. Our SVP approved my travel ahead of time. Economy is fine, cheapest flight from Boston please.",
+  "trip": {
+    "traveller_name": "Elena Bell",
+    "traveller_title": "Spouse of Marcus Bell, Vice President of Sales",
+    "passenger": "SPOUSE_OR_COMPANION",
+    "accompanies": "Marcus Bell",
+    "home_country": "US",
+    "on_leadership_team": false,
+    "origin": "BOS",
+    "destination": "MCO",
+    "travel_date": "2027-03-03",
+    "return_date": "",
+    "booking_date": "2027-02-03",
+    "purpose": "Co-hosting the customers' spouses program at the customer conference",
+    "purpose_kind": "CLIENT_ENTERTAINING",
+    "requested_cabin": "ECONOMY",
+    "wants_upgradeable_fare": false,
+    "loyalty_airline": "",
+    "medical_need_on_file": false,
+    "sign_offs": [
+      {
+        "role": "SENIOR_VICE_PRESIDENT",
+        "name": "Diane Foster",
+        "subject": "COMPANION_TRAVEL"
+      }
+    ],
+    "colleagues_on_flights": [],
+    "tickets_held": [],
+    "upgradeable_fares": [],
+    "driving_minutes": 0
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "BOS",
+        "destination": "MCO",
+        "date": "2027-03-03",
+        "return_date": "",
+        "flights": {
+          "morning": {
+            "carrier": "B6",
+            "depart": "08:10"
+          },
+          "delta": {
+            "carrier": "DL",
+            "depart": "11:25"
+          },
+          "evening": {
+            "carrier": "B6",
+            "depart": "16:50"
+          }
+        },
+        "offers": [
+          {
+            "slot": "morning-economy",
+            "flight": "morning",
+            "cabin": "ECONOMY",
+            "fare_cents": 21900
+          },
+          {
+            "slot": "delta-economy",
+            "flight": "delta",
+            "cabin": "ECONOMY",
+            "fare_cents": 23400
+          },
+          {
+            "slot": "evening-economy",
+            "flight": "evening",
+            "cabin": "ECONOMY",
+            "fare_cents": 24600
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "morning-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "COMPANION_TRAVEL_AUTHORIZED",
+      "LOWEST_FARE"
+    ],
+    "approvers": [
+      "SENIOR_VICE_PRESIDENT"
+    ],
+    "clauses": [
+      "LOWEST_AIRFARE",
+      "SPOUSE_COMPANION"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        267,
+        271
+      ],
+      "sha256": "f184d3376d6cc098a93b0d9a2ca9a63677efb2f9369ef6e5d0abb33aeae83cc7",
+      "quote": "Expenses of a spouse or companion who accompanies an employee on a business trip or other business function will be reimbursed where the travel has been authorized in advance from a Senior Vice President or higher, generally under the following circumstances.. A spouse or companion is ex pected to assist the employee in entertaining the client's spouses at a meeting, convention, or a company-sponsored function.",
+      "why": "a companion's travel, authorized in advance by a Senior Vice President or higher"
+    },
+    {
+      "lines": [
+        412,
+        413
+      ],
+      "sha256": "0ea98a0850a6685d5951a616caa1d77a35294515b0127754fc78d8d74bed3fb3",
+      "quote": "All airline tickets must be booked at the lowest available airfare as determined by Concur or the Travel Desk (subject to the parameters defined in this section).",
+      "why": "the default: the lowest available airfare"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "A companion's travel is reimbursed when authorized in advance by a Senior Vice President or higher, to help entertain clients' spouses (lines 267-271, in General Travel Guidelines, not Air Travel): book her at the lowest fare. The approval relied on is the Senior Vice President's."
+}

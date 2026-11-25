@@ -1,0 +1,145 @@
+{
+  "id": "heron-bluff",
+  "category": "boundary_twin",
+  "overlays": [
+    "multi_leg",
+    "dearer_option"
+  ],
+  "twin_of": "iris-tundra",
+  "twin_fact": "connections through Houston (500 flying minutes) or Miami (380 flying, 480 elapsed)",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "I need to get from Boston to Bogota on March 2nd for the implementation workshop. Alan, my VP, signed off on business class in advance. Please book business.",
+  "trip": {
+    "traveller_name": "Lucia Ferrante",
+    "traveller_title": "Principal Consultant",
+    "passenger": "EMPLOYEE",
+    "accompanies": "",
+    "home_country": "US",
+    "on_leadership_team": false,
+    "origin": "BOS",
+    "destination": "BOG",
+    "travel_date": "2027-03-02",
+    "return_date": "",
+    "booking_date": "2027-02-01",
+    "purpose": "Customer implementation workshop in Bogota",
+    "purpose_kind": "CUSTOMER_VISIT",
+    "requested_cabin": "BUSINESS",
+    "wants_upgradeable_fare": false,
+    "loyalty_airline": "",
+    "medical_need_on_file": false,
+    "sign_offs": [
+      {
+        "role": "VICE_PRESIDENT",
+        "name": "Alan Prescott",
+        "subject": "BUSINESS_CLASS"
+      }
+    ],
+    "colleagues_on_flights": [],
+    "tickets_held": [],
+    "upgradeable_fares": [],
+    "driving_minutes": 0
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "BOS",
+        "destination": "BOG",
+        "date": "2027-03-02",
+        "return_date": "",
+        "flights": {
+          "morning": {
+            "carrier": "UA",
+            "via": [
+              "IAH"
+            ],
+            "depart": "06:00",
+            "minutes": [
+              215,
+              285
+            ],
+            "layovers": [
+              70
+            ]
+          },
+          "midday": {
+            "carrier": "UA",
+            "via": [
+              "IAH"
+            ],
+            "depart": "11:30",
+            "minutes": [
+              215,
+              285
+            ],
+            "layovers": [
+              70
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "morning-economy",
+            "flight": "morning",
+            "cabin": "ECONOMY",
+            "fare_cents": 61800
+          },
+          {
+            "slot": "morning-business",
+            "flight": "morning",
+            "cabin": "BUSINESS",
+            "fare_cents": 214000
+          },
+          {
+            "slot": "midday-economy",
+            "flight": "midday",
+            "cabin": "ECONOMY",
+            "fare_cents": 64300
+          },
+          {
+            "slot": "midday-business",
+            "flight": "midday",
+            "cabin": "BUSINESS",
+            "fare_cents": 228000
+          }
+        ],
+        "background": 0
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "morning-business"
+    ],
+    "cabins": [
+      "BUSINESS"
+    ],
+    "reason_codes": [
+      "INTERNATIONAL_LONG_FLIGHT",
+      "LONG_FLIGHT_APPROVED"
+    ],
+    "approvers": [
+      "VICE_PRESIDENT"
+    ],
+    "clauses": [
+      "CLASS_OF_SERVICE",
+      "INTERNATIONAL_CLASS"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        402,
+        404
+      ],
+      "sha256": "0ec78811b20ff2aa881511085a213b64e2be7670afbec07bbc096ba5062d8c4d",
+      "quote": "International travel is to be by lowest possible airfare available. Any international travel exceeding 8 hours (whether a single segment or multiple segments combined) can be booked in an upgradeable fare or, with the prior approval of the traveler's Vice-President, in business class.",
+      "why": "the international rule: lowest fare; business over 8 hours with the Vice-President's prior approval"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "Only connections through Houston: 215 + 285 = 500 flying minutes. 'Multiple segments combined' (lines 402-404) exceed 480 even without the 70-minute connection, so every reading agrees: business with the Vice-President's prior approval."
+}

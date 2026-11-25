@@ -1,0 +1,16 @@
+{
+  "id": "blackbaud-flight-policy",
+  "name": "Blackbaud Travel Policy Flight Booking",
+  "slug": "blackbaud",
+  "title": "Blackbaud, Inc. Travel Policy, February 2014",
+  "frozen_file": "blackbaud_policy.txt",
+  "sha256": "9425eef747a01231b9adff16c3958eee75d95b69f81f62c5bdb7bee03df1b87c",
+  "raw_pdf_sha256": "639ddf6e8c2bd33d120b32c96de09d74292da42a1ab2ff440610c4e138dc0a2b",
+  "words": 9397,
+  "lines": 1095,
+  "source": "http://ctp.travelinc.com/CompanyForms/blackbaud/blackbaud%20Travel%20Policy%202014.pdf",
+  "frozen_on": "2026-11-24",
+  "scenario_count": 24,
+  "currency": "USD",
+  "background_offers": 3
+}

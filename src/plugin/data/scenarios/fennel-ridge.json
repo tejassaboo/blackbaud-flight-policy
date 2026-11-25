@@ -1,0 +1,130 @@
+{
+  "id": "fennel-ridge",
+  "category": "boundary_twin",
+  "overlays": [
+    "dearer_option"
+  ],
+  "twin_of": "garnet-moor",
+  "twin_fact": "both nonstops scheduled at 481 minutes or 480 minutes",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Detroit to Amsterdam overnight on February 9th for the quarterly review. Martin, my VP, approved business class for this one, so business please.",
+  "trip": {
+    "traveller_name": "Claire Benoit",
+    "traveller_title": "Director, Product Management",
+    "passenger": "EMPLOYEE",
+    "accompanies": "",
+    "home_country": "US",
+    "on_leadership_team": false,
+    "origin": "DTW",
+    "destination": "AMS",
+    "travel_date": "2027-02-09",
+    "return_date": "",
+    "booking_date": "2027-01-11",
+    "purpose": "Quarterly review with the Amsterdam office",
+    "purpose_kind": "INTERNAL_MEETING",
+    "requested_cabin": "BUSINESS",
+    "wants_upgradeable_fare": false,
+    "loyalty_airline": "",
+    "medical_need_on_file": false,
+    "sign_offs": [
+      {
+        "role": "VICE_PRESIDENT",
+        "name": "Martin Ruiz",
+        "subject": "BUSINESS_CLASS"
+      }
+    ],
+    "colleagues_on_flights": [],
+    "tickets_held": [],
+    "upgradeable_fares": [],
+    "driving_minutes": 0
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "DTW",
+        "destination": "AMS",
+        "date": "2027-02-09",
+        "return_date": "",
+        "flights": {
+          "delta": {
+            "carrier": "DL",
+            "depart": "17:50",
+            "minutes": [
+              481
+            ]
+          },
+          "klm": {
+            "carrier": "KL",
+            "depart": "19:25",
+            "minutes": [
+              481
+            ]
+          }
+        },
+        "offers": [
+          {
+            "slot": "delta-economy",
+            "flight": "delta",
+            "cabin": "ECONOMY",
+            "fare_cents": 78400
+          },
+          {
+            "slot": "delta-business",
+            "flight": "delta",
+            "cabin": "BUSINESS",
+            "fare_cents": 389000
+          },
+          {
+            "slot": "klm-economy",
+            "flight": "klm",
+            "cabin": "ECONOMY",
+            "fare_cents": 81200
+          },
+          {
+            "slot": "klm-business",
+            "flight": "klm",
+            "cabin": "BUSINESS",
+            "fare_cents": 402000
+          }
+        ],
+        "background": 0
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "delta-business"
+    ],
+    "cabins": [
+      "BUSINESS"
+    ],
+    "reason_codes": [
+      "INTERNATIONAL_LONG_FLIGHT",
+      "LONG_FLIGHT_APPROVED"
+    ],
+    "approvers": [
+      "VICE_PRESIDENT"
+    ],
+    "clauses": [
+      "CLASS_OF_SERVICE",
+      "INTERNATIONAL_CLASS"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        402,
+        404
+      ],
+      "sha256": "0ec78811b20ff2aa881511085a213b64e2be7670afbec07bbc096ba5062d8c4d",
+      "quote": "International travel is to be by lowest possible airfare available. Any international travel exceeding 8 hours (whether a single segment or multiple segments combined) can be booked in an upgradeable fare or, with the prior approval of the traveler's Vice-President, in business class.",
+      "why": "the international rule: lowest fare; business over 8 hours with the Vice-President's prior approval"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "Both nonstops are scheduled at 481 minutes: international travel exceeding 8 hours, with the Vice-President's prior approval (lines 402-404). Background is off: a filler connection could fall on the other side."
+}

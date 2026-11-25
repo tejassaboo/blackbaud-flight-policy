@@ -1,0 +1,146 @@
+{
+  "id": "nectar-pine",
+  "category": "multi_rule",
+  "overlays": [
+    "synonym"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Boston to London Heathrow on February 22nd. Economy is fine, but please get me the British Airways economy fare that I can upgrade later with my miles.",
+  "trip": {
+    "traveller_name": "Fiona Gallagher",
+    "traveller_title": "Senior Consultant",
+    "passenger": "EMPLOYEE",
+    "accompanies": "",
+    "home_country": "US",
+    "on_leadership_team": false,
+    "origin": "BOS",
+    "destination": "LHR",
+    "travel_date": "2027-02-22",
+    "return_date": "",
+    "booking_date": "2027-01-25",
+    "purpose": "Customer data migration workshop in London",
+    "purpose_kind": "CUSTOMER_VISIT",
+    "requested_cabin": "ECONOMY",
+    "wants_upgradeable_fare": true,
+    "loyalty_airline": "",
+    "medical_need_on_file": false,
+    "sign_offs": [],
+    "colleagues_on_flights": [],
+    "tickets_held": [],
+    "upgradeable_fares": [
+      {
+        "flight_number": "BA 2126",
+        "fare_cents": 79500
+      }
+    ],
+    "driving_minutes": 0
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "BOS",
+        "destination": "LHR",
+        "date": "2027-02-22",
+        "return_date": "",
+        "flights": {
+          "british": {
+            "carrier": "BA",
+            "depart": "18:30"
+          },
+          "delta": {
+            "carrier": "DL",
+            "depart": "21:10"
+          }
+        },
+        "offers": [
+          {
+            "slot": "british-economy",
+            "flight": "british",
+            "cabin": "ECONOMY",
+            "fare_cents": 61500
+          },
+          {
+            "slot": "british-flex",
+            "flight": "british",
+            "cabin": "ECONOMY",
+            "fare_cents": 79500
+          },
+          {
+            "slot": "delta-economy",
+            "flight": "delta",
+            "cabin": "ECONOMY",
+            "fare_cents": 64000
+          }
+        ],
+        "background": 0
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "british-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "LONG_FLIGHT_CONDITION_NOT_MET",
+      "LOWEST_FARE",
+      "UPGRADE_NOT_ELIGIBLE"
+    ],
+    "approvers": [
+      "NONE"
+    ],
+    "clauses": [
+      "CLASS_OF_SERVICE",
+      "INTERNATIONAL_CLASS",
+      "LOWEST_AIRFARE"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        433,
+        433
+      ],
+      "sha256": "bbf325601763c56d2daf420bf36aa0a6c3b1186c367febc4b6e0f2adaf9aa2f4",
+      "quote": "Full Y fares, or upgradeable fares, are not allowed to be booked.",
+      "why": "upgradeable fares are not allowed"
+    },
+    {
+      "lines": [
+        402,
+        404
+      ],
+      "sha256": "0ec78811b20ff2aa881511085a213b64e2be7670afbec07bbc096ba5062d8c4d",
+      "quote": "International travel is to be by lowest possible airfare available. Any international travel exceeding 8 hours (whether a single segment or multiple segments combined) can be booked in an upgradeable fare or, with the prior approval of the traveler's Vice-President, in business class.",
+      "why": "the international rule: lowest fare; business over 8 hours with the Vice-President's prior approval"
+    },
+    {
+      "lines": [
+        412,
+        413
+      ],
+      "sha256": "0ea98a0850a6685d5951a616caa1d77a35294515b0127754fc78d8d74bed3fb3",
+      "quote": "All airline tickets must be booked at the lowest available airfare as determined by Concur or the Travel Desk (subject to the parameters defined in this section).",
+      "why": "the default: the lowest available airfare"
+    }
+  ],
+  "distractors": [
+    {
+      "lines": [
+        404,
+        405
+      ],
+      "quote": "Employees may utilize their own frequent flier miles to upgrade fares, where applicable.",
+      "why": "the traveller may use miles on the ticket bought; it does not choose the fare"
+    }
+  ],
+  "design_notes": "Upgradeable fares are not allowed to be booked (line 433). The only exception, international travel exceeding 8 hours (lines 402-404), does not reach a 405-minute nonstop. The lowest fare; the traveller may still use miles on it where the airline allows (lines 404-405)."
+}

@@ -1,0 +1,134 @@
+{
+  "id": "amber-wren",
+  "category": "easy",
+  "overlays": [],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "I'm heading from Austin up to Denver on the 15th for the analytics training. Just economy, whatever's cheapest.",
+  "trip": {
+    "traveller_name": "Maya Torres",
+    "traveller_title": "Implementation Consultant",
+    "passenger": "EMPLOYEE",
+    "accompanies": "",
+    "home_country": "US",
+    "on_leadership_team": false,
+    "origin": "AUS",
+    "destination": "DEN",
+    "travel_date": "2026-12-15",
+    "return_date": "",
+    "booking_date": "2026-12-01",
+    "purpose": "Analytics product training in Denver",
+    "purpose_kind": "TRAINING",
+    "requested_cabin": "ECONOMY",
+    "wants_upgradeable_fare": false,
+    "loyalty_airline": "",
+    "medical_need_on_file": false,
+    "sign_offs": [],
+    "colleagues_on_flights": [],
+    "tickets_held": [],
+    "upgradeable_fares": [],
+    "driving_minutes": 0
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "AUS",
+        "destination": "DEN",
+        "date": "2026-12-15",
+        "return_date": "",
+        "flights": {
+          "early": {
+            "carrier": "WN",
+            "depart": "07:05"
+          },
+          "mid": {
+            "carrier": "UA",
+            "depart": "09:40"
+          },
+          "noon": {
+            "carrier": "WN",
+            "depart": "13:15"
+          },
+          "late": {
+            "carrier": "UA",
+            "depart": "17:30"
+          }
+        },
+        "offers": [
+          {
+            "slot": "early-economy",
+            "flight": "early",
+            "cabin": "ECONOMY",
+            "fare_cents": 21400,
+            "seats": false
+          },
+          {
+            "slot": "mid-economy",
+            "flight": "mid",
+            "cabin": "ECONOMY",
+            "fare_cents": 23800
+          },
+          {
+            "slot": "noon-economy",
+            "flight": "noon",
+            "cabin": "ECONOMY",
+            "fare_cents": 24900
+          },
+          {
+            "slot": "late-economy",
+            "flight": "late",
+            "cabin": "ECONOMY",
+            "fare_cents": 31500,
+            "refundable": true
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "mid-economy"
+    ],
+    "cabins": [
+      "ECONOMY"
+    ],
+    "reason_codes": [
+      "LOWEST_FARE"
+    ],
+    "approvers": [
+      "NONE"
+    ],
+    "clauses": [
+      "CLASS_OF_SERVICE",
+      "DOMESTIC_CLASS",
+      "LOWEST_AIRFARE"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        412,
+        413
+      ],
+      "sha256": "0ea98a0850a6685d5951a616caa1d77a35294515b0127754fc78d8d74bed3fb3",
+      "quote": "All airline tickets must be booked at the lowest available airfare as determined by Concur or the Travel Desk (subject to the parameters defined in this section).",
+      "why": "the default: the lowest available airfare"
+    },
+    {
+      "lines": [
+        397,
+        398
+      ],
+      "sha256": "9196c9549884b229000130b9bfacd66a84544d3f7ed8469054f192d4d5c669c9",
+      "quote": "Our policy is that domestic air purchases are coach class, regardless of flight time, and booked via nonrefundable tickets.",
+      "why": "domestic trips are coach, whatever the flight time"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "Domestic economy: the lowest available airfare (lines 412-413). The cheaper 07:05 fare is sold out; the refundable fare is dearer anyway."
+}

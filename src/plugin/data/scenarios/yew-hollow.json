@@ -1,0 +1,127 @@
+{
+  "id": "yew-hollow",
+  "category": "flag",
+  "overlays": [
+    "approval_required",
+    "dearer_option"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [
+    "ember-quarry",
+    "garnet-moor"
+  ],
+  "ambiguity_note": "none: an approval is required and missing; the text is clear",
+  "request": "San Francisco to Seoul on February 17th for the customer data summit. My director, Wes, approved business class for the long flight. Please book business.",
+  "trip": {
+    "traveller_name": "Grace Holloway",
+    "traveller_title": "Senior Data Scientist",
+    "passenger": "EMPLOYEE",
+    "accompanies": "",
+    "home_country": "US",
+    "on_leadership_team": false,
+    "origin": "SFO",
+    "destination": "ICN",
+    "travel_date": "2027-02-17",
+    "return_date": "",
+    "booking_date": "2027-01-18",
+    "purpose": "Customer data summit in Seoul",
+    "purpose_kind": "CONFERENCE",
+    "requested_cabin": "BUSINESS",
+    "wants_upgradeable_fare": false,
+    "loyalty_airline": "",
+    "medical_need_on_file": false,
+    "sign_offs": [
+      {
+        "role": "DIRECTOR",
+        "name": "Wes Albright",
+        "subject": "BUSINESS_CLASS"
+      }
+    ],
+    "colleagues_on_flights": [],
+    "tickets_held": [],
+    "upgradeable_fares": [],
+    "driving_minutes": 0
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "SFO",
+        "destination": "ICN",
+        "date": "2027-02-17",
+        "return_date": "",
+        "flights": {
+          "united": {
+            "carrier": "UA",
+            "depart": "11:10"
+          },
+          "korean": {
+            "carrier": "KE",
+            "depart": "13:40"
+          }
+        },
+        "offers": [
+          {
+            "slot": "united-economy",
+            "flight": "united",
+            "cabin": "ECONOMY",
+            "fare_cents": 96500
+          },
+          {
+            "slot": "united-business",
+            "flight": "united",
+            "cabin": "BUSINESS",
+            "fare_cents": 498000
+          },
+          {
+            "slot": "korean-economy",
+            "flight": "korean",
+            "cabin": "ECONOMY",
+            "fare_cents": 92300
+          },
+          {
+            "slot": "korean-business",
+            "flight": "korean",
+            "cabin": "BUSINESS",
+            "fare_cents": 471000
+          }
+        ],
+        "background": 0
+      }
+    ]
+  },
+  "expected": {
+    "decision": "FLAG_FOR_APPROVAL",
+    "offer_slots": [
+      "korean-business"
+    ],
+    "cabins": [
+      "BUSINESS"
+    ],
+    "reason_codes": [
+      "APPROVAL_REQUIRED"
+    ],
+    "approvers": [
+      "VICE_PRESIDENT"
+    ],
+    "clauses": [
+      "CLASS_OF_SERVICE",
+      "INTERNATIONAL_CLASS"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        402,
+        404
+      ],
+      "sha256": "0ec78811b20ff2aa881511085a213b64e2be7670afbec07bbc096ba5062d8c4d",
+      "quote": "International travel is to be by lowest possible airfare available. Any international travel exceeding 8 hours (whether a single segment or multiple segments combined) can be booked in an upgradeable fare or, with the prior approval of the traveler's Vice-President, in business class.",
+      "why": "the international rule: lowest fare; business over 8 hours with the Vice-President's prior approval"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "The nonstops are about 680 minutes, international travel exceeding 8 hours, so business is possible with the prior approval of the traveller's Vice-President (lines 402-404). Only a director signed: hold the cheapest business fare for the Vice-President. Approval required, not 'no compliant offer'."
+}

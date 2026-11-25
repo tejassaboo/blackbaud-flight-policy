@@ -1,0 +1,147 @@
+{
+  "id": "lilac-ferry",
+  "category": "multi_rule",
+  "overlays": [
+    "dearer_option"
+  ],
+  "twin_of": "",
+  "twin_fact": "",
+  "flag_twins": [],
+  "ambiguity_note": "none",
+  "request": "Boston to Seattle on February 16th for the customer go-live. Because of my back surgery I've got a medical exception for business class; both the travel desk and my VP approved it. Please book business.",
+  "trip": {
+    "traveller_name": "Robert Asante",
+    "traveller_title": "Senior Project Manager",
+    "passenger": "EMPLOYEE",
+    "accompanies": "",
+    "home_country": "US",
+    "on_leadership_team": false,
+    "origin": "BOS",
+    "destination": "SEA",
+    "travel_date": "2027-02-16",
+    "return_date": "",
+    "booking_date": "2027-01-20",
+    "purpose": "Customer go-live support in Seattle",
+    "purpose_kind": "CUSTOMER_VISIT",
+    "requested_cabin": "BUSINESS",
+    "wants_upgradeable_fare": false,
+    "loyalty_airline": "",
+    "medical_need_on_file": true,
+    "sign_offs": [
+      {
+        "role": "TRAVEL_DEPARTMENT",
+        "name": "Blackbaud Travel Desk",
+        "subject": "MEDICAL_EXCEPTION"
+      },
+      {
+        "role": "VICE_PRESIDENT",
+        "name": "Janet Morrow",
+        "subject": "MEDICAL_EXCEPTION"
+      }
+    ],
+    "colleagues_on_flights": [],
+    "tickets_held": [],
+    "upgradeable_fares": [],
+    "driving_minutes": 0
+  },
+  "world": {
+    "searches": [
+      {
+        "name": "main",
+        "origin": "BOS",
+        "destination": "SEA",
+        "date": "2027-02-16",
+        "return_date": "",
+        "flights": {
+          "morning": {
+            "carrier": "DL",
+            "depart": "08:30"
+          },
+          "alaska": {
+            "carrier": "AS",
+            "depart": "10:10"
+          },
+          "afternoon": {
+            "carrier": "DL",
+            "depart": "15:45"
+          }
+        },
+        "offers": [
+          {
+            "slot": "morning-economy",
+            "flight": "morning",
+            "cabin": "ECONOMY",
+            "fare_cents": 34100
+          },
+          {
+            "slot": "morning-business",
+            "flight": "morning",
+            "cabin": "BUSINESS",
+            "fare_cents": 118000
+          },
+          {
+            "slot": "alaska-economy",
+            "flight": "alaska",
+            "cabin": "ECONOMY",
+            "fare_cents": 32800
+          },
+          {
+            "slot": "afternoon-economy",
+            "flight": "afternoon",
+            "cabin": "ECONOMY",
+            "fare_cents": 35900
+          },
+          {
+            "slot": "afternoon-business",
+            "flight": "afternoon",
+            "cabin": "BUSINESS",
+            "fare_cents": 112500
+          }
+        ]
+      }
+    ]
+  },
+  "expected": {
+    "decision": "BOOK",
+    "offer_slots": [
+      "afternoon-business"
+    ],
+    "cabins": [
+      "BUSINESS"
+    ],
+    "reason_codes": [
+      "MEDICAL_NEED"
+    ],
+    "approvers": [
+      "TRAVEL_DEPARTMENT",
+      "VICE_PRESIDENT"
+    ],
+    "clauses": [
+      "CLASS_OF_SERVICE",
+      "DOMESTIC_CLASS"
+    ],
+    "unclear_phrase": ""
+  },
+  "must_keep": [
+    {
+      "lines": [
+        397,
+        398
+      ],
+      "sha256": "9196c9549884b229000130b9bfacd66a84544d3f7ed8469054f192d4d5c669c9",
+      "quote": "Our policy is that domestic air purchases are coach class, regardless of flight time, and booked via nonrefundable tickets.",
+      "why": "domestic trips are coach, whatever the flight time"
+    },
+    {
+      "lines": [
+        398,
+        399
+      ],
+      "sha256": "f727c82e6a4ba7242d261252168ffe7baf71dd4e07f2772aa5d1bfb1dd9a58c1",
+      "quote": "Exception requests for medical reasons may be submitted and approved by both the travel department and the appropriate Vice President.",
+      "why": "a medical exception needs both approvals"
+    }
+  ],
+  "distractors": [],
+  "design_notes": "Domestic air is coach regardless of flight time (line 397), but a medical exception approved by both the travel department and the appropriate Vice President (lines 398-399) is on file: the cheapest nonrefundable business fare."
+}
