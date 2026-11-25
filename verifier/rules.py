@@ -355,8 +355,12 @@ def international_business(trip, seated, allowed, lowest):
                       "questions to the Travel Desk; the held business fare also relies on the Vice-President's "
                       "sign-off on file.", phrase=LONG_PHRASE)
     if not approved:
-        return answer(Decision.FLAG_FOR_APPROVAL, wanted, [ReasonCode.APPROVAL_REQUIRED], [Approver.VICE_PRESIDENT],
-                      class_clauses(False),
+        # Validation w1v3 (yew-hollow): LONG_FLIGHT_CONDITION_NOT_MET names the same missing condition, the prior
+        # approval of the traveller's Vice-President that lines 402-404 attach to business (as Anixter heron-scree
+        # accepts the code of the unmet authorization); the hold, the offer and the awaited role still decide.
+        return answer(Decision.FLAG_FOR_APPROVAL, wanted,
+                      [ReasonCode.APPROVAL_REQUIRED, ReasonCode.LONG_FLIGHT_CONDITION_NOT_MET],
+                      [Approver.VICE_PRESIDENT], class_clauses(False),
                       "Lines 402-404: the travel exceeds 480 minutes, but business needs the prior approval of the "
                       "traveller's Vice-President, which is not on file: hold the business fare for it.")
     reasons = [ReasonCode.LONG_FLIGHT_APPROVED, ReasonCode.INTERNATIONAL_LONG_FLIGHT]
@@ -382,11 +386,14 @@ def upgradeable(trip, seated, lowest, domestic):
     if verdict is False:
         # The fare type asked for is declined by line 433, a bullet of the Lowest Airfare Selection section, so
         # LOWEST_FARE stays beside the specific codes.
-        reasons = [ReasonCode.UPGRADE_NOT_ELIGIBLE, ReasonCode.LOWEST_FARE]
+        # Validation w1v3 (nectar-pine): the fare is wanted to upgrade with miles, and lines 442-444 forbid a
+        # frequent flier programme to cause cost beyond the lowest available airfare, so LOYALTY_PROGRAM_PREFERENCE
+        # and its section are accepted too.
+        reasons = [ReasonCode.UPGRADE_NOT_ELIGIBLE, ReasonCode.LOWEST_FARE, ReasonCode.LOYALTY_PROGRAM_PREFERENCE]
         if not domestic:
             reasons.append(ReasonCode.LONG_FLIGHT_CONDITION_NOT_MET)
         return answer(Decision.BOOK, lowest, reasons, unused_sign_offs(trip),
-                      [Clause.LOWEST_AIRFARE, *class_clauses(domestic)],
+                      [Clause.LOWEST_AIRFARE, *class_clauses(domestic), Clause.FREQUENT_FLIER],
                       "Line 433: upgradeable fares are not allowed to be booked, and the travel does not exceed 480 "
                       "minutes, so lines 402-404 do not reach it; the lowest available airfare.")
     if verdict is None:

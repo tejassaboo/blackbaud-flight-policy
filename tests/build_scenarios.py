@@ -497,7 +497,10 @@ scenario(
          upgradeable_fares=[{"flight_number": first_flight("nectar-pine", nectar_spec, "british-flex"),
                              "fare_cents": 79500}]),
     nectar_spec,
-    expected("BOOK", ["british-economy"], ["ECONOMY"], [*NOT_LONG, "LOWEST_FARE"], ["NONE"], INT_LOW),
+    # Validation w1v3: the fare is wanted for a miles upgrade, so the frequent flier rule (lines 442-444) is also
+    # a ground for declining it.
+    expected("BOOK", ["british-economy"], ["ECONOMY"], [*NOT_LONG, "LOWEST_FARE", "LOYALTY_PROGRAM_PREFERENCE"],
+             ["NONE"], INT_LOW + ["FREQUENT_FLIER"]),
     [NO_UPGRADEABLE, INTERNATIONAL, LOWEST],
     "Upgradeable fares are not allowed to be booked (line 433). The only exception, international travel exceeding "
     "8 hours (lines 402-404), does not reach a 405-minute nonstop. The lowest fare; the traveller may still use miles "
@@ -751,8 +754,9 @@ scenario(
         offer("korean-economy", "korean", "ECONOMY", 92300),
         offer("korean-business", "korean", "BUSINESS", 471000),
     ], background=0),
-    expected("FLAG_FOR_APPROVAL", ["korean-business"], ["BUSINESS"], ["APPROVAL_REQUIRED"], ["VICE_PRESIDENT"],
-             INT_CLASS),
+    # Validation w1v3: LONG_FLIGHT_CONDITION_NOT_MET names the same missing prior approval (lines 402-404).
+    expected("FLAG_FOR_APPROVAL", ["korean-business"], ["BUSINESS"], ["APPROVAL_REQUIRED", "LONG_FLIGHT_CONDITION_NOT_MET"],
+             ["VICE_PRESIDENT"], INT_CLASS),
     [INTERNATIONAL],
     "The nonstops are about 680 minutes, international travel exceeding 8 hours, so business is possible with the "
     "prior approval of the traveller's Vice-President (lines 402-404). Only a director signed: hold the cheapest "

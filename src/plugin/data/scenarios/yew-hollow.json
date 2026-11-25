@@ -100,7 +100,8 @@
       "BUSINESS"
     ],
     "reason_codes": [
-      "APPROVAL_REQUIRED"
+      "APPROVAL_REQUIRED",
+      "LONG_FLIGHT_CONDITION_NOT_MET"
     ],
     "approvers": [
       "VICE_PRESIDENT"

@@ -91,7 +91,8 @@
     "reason_codes": [
       "LONG_FLIGHT_CONDITION_NOT_MET",
       "UPGRADE_NOT_ELIGIBLE",
-      "LOWEST_FARE"
+      "LOWEST_FARE",
+      "LOYALTY_PROGRAM_PREFERENCE"
     ],
     "approvers": [
       "NONE"
@@ -99,7 +100,8 @@
     "clauses": [
       "CLASS_OF_SERVICE",
       "INTERNATIONAL_CLASS",
-      "LOWEST_AIRFARE"
+      "LOWEST_AIRFARE",
+      "FREQUENT_FLIER"
     ],
     "unclear_phrase": ""
   },
