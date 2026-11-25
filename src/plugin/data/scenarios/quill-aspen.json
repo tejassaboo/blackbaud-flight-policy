@@ -99,6 +99,7 @@
       "LOWEST_FARE"
     ],
     "approvers": [
+      "NONE",
       "SENIOR_VICE_PRESIDENT"
     ],
     "clauses": [

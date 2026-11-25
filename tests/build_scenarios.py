@@ -154,7 +154,8 @@ INT_CLASS = ["CLASS_OF_SERVICE", "INTERNATIONAL_CLASS"]
 NOT_LONG = ["LONG_FLIGHT_CONDITION_NOT_MET", "LOWEST_FARE", "UPGRADE_NOT_ELIGIBLE"]
 LONG_OK = ["INTERNATIONAL_LONG_FLIGHT", "LONG_FLIGHT_APPROVED"]
 UNCLEAR_ROLES = ["NOT_NAMED", "TRAVEL_DEPARTMENT"]
-# A business sign-off on file that the decision does not use: NONE (it relies on nobody's) or that role.
+# A Vice-President's business sign-off on file, used by the decision or not: NONE or that role (template
+# SYNC_NOTES 4(b) and 4').
 NONE_OR_VP = ["NONE", "VICE_PRESIDENT"]
 
 # ===== easy (5) =====
@@ -268,7 +269,7 @@ scenario(
         offer("american-economy", "american", "ECONOMY", 121000),
         offer("american-business", "american", "BUSINESS", 497000),
     ]),
-    expected("BOOK", ["ana-business"], ["BUSINESS"], LONG_OK, ["VICE_PRESIDENT"], INT_CLASS),
+    expected("BOOK", ["ana-business"], ["BUSINESS"], LONG_OK, NONE_OR_VP, INT_CLASS),
     [INTERNATIONAL],
     "Every itinerary is far over 480 minutes and the traveller's Vice-President approved business in advance "
     "(lines 402-404): the cheapest business fare. Background connections are longer still, so they agree.")
@@ -296,7 +297,7 @@ scenario(
     "for this one, so business please.",
     trip(traveller_name="Claire Benoit", traveller_title="Director, Product Management", **AMS_TRIP),
     search("DTW", "AMS", "2027-02-09", ams_flights(481), AMS_OFFERS, background=0),
-    expected("BOOK", ["delta-business"], ["BUSINESS"], LONG_OK, ["VICE_PRESIDENT"], INT_CLASS),
+    expected("BOOK", ["delta-business"], ["BUSINESS"], LONG_OK, NONE_OR_VP, INT_CLASS),
     [INTERNATIONAL],
     "Both nonstops are scheduled at 481 minutes: international travel exceeding 8 hours, with the Vice-President's "
     "prior approval (lines 402-404). Background is off: a filler connection could fall on the other side.",
@@ -335,7 +336,7 @@ scenario(
         offer("midday-economy", "midday", "ECONOMY", 64300),
         offer("midday-business", "midday", "BUSINESS", 228000),
     ], background=0),
-    expected("BOOK", ["morning-business"], ["BUSINESS"], LONG_OK, ["VICE_PRESIDENT"], INT_CLASS),
+    expected("BOOK", ["morning-business"], ["BUSINESS"], LONG_OK, NONE_OR_VP, INT_CLASS),
     [INTERNATIONAL],
     "Only connections through Houston: 215 + 285 = 500 flying minutes. 'Multiple segments combined' (lines 402-404) "
     "exceed 480 even without the 70-minute connection, so every reading agrees: business with the Vice-President's "
@@ -441,7 +442,7 @@ scenario(
         offer("afternoon-economy", "afternoon", "ECONOMY", 35900),
         offer("afternoon-business", "afternoon", "BUSINESS", 112500),
     ]),
-    expected("BOOK", ["afternoon-business"], ["BUSINESS"], ["MEDICAL_NEED"], ["TRAVEL_DEPARTMENT", "VICE_PRESIDENT"],
+    expected("BOOK", ["afternoon-business"], ["BUSINESS"], ["MEDICAL_NEED"], ["NONE", "TRAVEL_DEPARTMENT", "VICE_PRESIDENT"],
              ["CLASS_OF_SERVICE", "DOMESTIC_CLASS"]),
     [DOMESTIC, MEDICAL],
     "Domestic air is coach regardless of flight time (line 397), but a medical exception approved by both the travel "
@@ -467,7 +468,7 @@ scenario(
         offer("airfrance-economy", "airfrance", "ECONOMY", 132500),
         offer("airfrance-business", "airfrance", "BUSINESS", 589000, refundable=True),
     ], return_date="2027-03-15", background=0),
-    expected("BOOK", ["delta-business"], ["BUSINESS"], LONG_OK + ["REFUNDABLE_FARE_NOT_ALLOWED"], ["VICE_PRESIDENT"],
+    expected("BOOK", ["delta-business"], ["BUSINESS"], LONG_OK + ["REFUNDABLE_FARE_NOT_ALLOWED"], NONE_OR_VP,
              INT_CLASS + ["LOWEST_AIRFARE"]),
     [INTERNATIONAL, NONREF],
     "Both directions exceed 480 minutes and the Vice-President approved business in advance (lines 402-404). The "
@@ -567,7 +568,7 @@ scenario(
         offer("evening-economy", "evening", "ECONOMY", 24600),
     ]),
     expected("BOOK", ["morning-economy"], ["ECONOMY"], ["COMPANION_TRAVEL_AUTHORIZED", "LOWEST_FARE"],
-             ["SENIOR_VICE_PRESIDENT"], ["LOWEST_AIRFARE", "SPOUSE_COMPANION"]),
+             ["NONE", "SENIOR_VICE_PRESIDENT"], ["LOWEST_AIRFARE", "SPOUSE_COMPANION"]),
     [COMPANION, LOWEST],
     "A companion's travel is reimbursed when authorized in advance by a Senior Vice President or higher, to help "
     "entertain clients' spouses (lines 267-271, in General Travel Guidelines, not Air Travel): book her at the lowest "

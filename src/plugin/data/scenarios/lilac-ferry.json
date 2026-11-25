@@ -114,6 +114,7 @@
       "MEDICAL_NEED"
     ],
     "approvers": [
+      "NONE",
       "TRAVEL_DEPARTMENT",
       "VICE_PRESIDENT"
     ],

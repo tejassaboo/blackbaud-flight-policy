@@ -54,19 +54,19 @@ over the cap, so a hosted run with one extra tool call stops before it submits.
 | `basil-cove` | easy | BOOK (denver-economy; ECONOMY) | LOWEST_FARE | NONE | CLASS_OF_SERVICE or DOMESTIC_CLASS or LOWEST_AIRFARE (397-398, 412-413, 426-429) |
 | `cobalt-sedge` | easy | BOOK (british-economy; ECONOMY) | LOWEST_FARE or LOYALTY_PROGRAM_PREFERENCE | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS or LOWEST_AIRFARE or FREQUENT_FLIER (402-404, 412-413, 442-444) |
 | `dune-larkspur` | easy | BOOK (ana-economy; ECONOMY) | LOWEST_FARE | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS or LOWEST_AIRFARE (402-404, 412-413) |
-| `ember-quarry` | easy | BOOK (ana-business; BUSINESS) | INTERNATIONAL_LONG_FLIGHT or LONG_FLIGHT_APPROVED | VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS (402-404) |
-| `fennel-ridge` | boundary_twin | BOOK (delta-business; BUSINESS) | INTERNATIONAL_LONG_FLIGHT or LONG_FLIGHT_APPROVED | VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS (402-404) |
+| `ember-quarry` | easy | BOOK (ana-business; BUSINESS) | INTERNATIONAL_LONG_FLIGHT or LONG_FLIGHT_APPROVED | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS (402-404) |
+| `fennel-ridge` | boundary_twin | BOOK (delta-business; BUSINESS) | INTERNATIONAL_LONG_FLIGHT or LONG_FLIGHT_APPROVED | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS (402-404) |
 | `garnet-moor` | boundary_twin | BOOK (delta-economy; ECONOMY) | LONG_FLIGHT_CONDITION_NOT_MET or LOWEST_FARE or UPGRADE_NOT_ELIGIBLE | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS or LOWEST_AIRFARE (402-404, 412-413) |
-| `heron-bluff` | boundary_twin | BOOK (morning-business; BUSINESS) | INTERNATIONAL_LONG_FLIGHT or LONG_FLIGHT_APPROVED | VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS (402-404) |
+| `heron-bluff` | boundary_twin | BOOK (morning-business; BUSINESS) | INTERNATIONAL_LONG_FLIGHT or LONG_FLIGHT_APPROVED | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS (402-404) |
 | `iris-tundra` | boundary_twin | BOOK (morning-economy; ECONOMY) | LONG_FLIGHT_CONDITION_NOT_MET or LOWEST_FARE or UPGRADE_NOT_ELIGIBLE | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS or LOWEST_AIRFARE (402-404, 412-413) |
 | `jasper-glen` | boundary_twin | BOOK (jetblue-economy; ECONOMY) | LOWEST_FARE | NONE | CLASS_OF_SERVICE or DOMESTIC_CLASS or LOWEST_AIRFARE or TRAVELING_TOGETHER (286-288, 397-398, 412-413) |
 | `kelp-meadow` | boundary_twin | BOOK (delta-economy; ECONOMY) | LOWEST_FARE or TRAVELLER_LIMIT_PER_FLIGHT | NONE | CLASS_OF_SERVICE or DOMESTIC_CLASS or LOWEST_AIRFARE or TRAVELING_TOGETHER (286-288, 397-398, 412-413) |
-| `lilac-ferry` | multi_rule | BOOK (afternoon-business; BUSINESS) | MEDICAL_NEED | TRAVEL_DEPARTMENT or VICE_PRESIDENT | CLASS_OF_SERVICE or DOMESTIC_CLASS (397-398, 398-399) |
-| `moss-harbor` | multi_rule | BOOK (delta-business; BUSINESS) | INTERNATIONAL_LONG_FLIGHT or LONG_FLIGHT_APPROVED or REFUNDABLE_FARE_NOT_ALLOWED | VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS or LOWEST_AIRFARE (402-404, 432) |
+| `lilac-ferry` | multi_rule | BOOK (afternoon-business; BUSINESS) | MEDICAL_NEED | NONE or TRAVEL_DEPARTMENT or VICE_PRESIDENT | CLASS_OF_SERVICE or DOMESTIC_CLASS (397-398, 398-399) |
+| `moss-harbor` | multi_rule | BOOK (delta-business; BUSINESS) | INTERNATIONAL_LONG_FLIGHT or LONG_FLIGHT_APPROVED or REFUNDABLE_FARE_NOT_ALLOWED | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS or LOWEST_AIRFARE (402-404, 432) |
 | `nectar-pine` | multi_rule | BOOK (british-economy; ECONOMY) | LONG_FLIGHT_CONDITION_NOT_MET or LOWEST_FARE or UPGRADE_NOT_ELIGIBLE | NONE | CLASS_OF_SERVICE or INTERNATIONAL_CLASS or LOWEST_AIRFARE (402-404, 412-413, 433) |
 | `onyx-brook` | multi_rule | BOOK (american-economy; ECONOMY) | LOWEST_FARE or REFUNDABLE_FARE_NOT_ALLOWED | NONE | CLASS_OF_SERVICE or DOMESTIC_CLASS or LOWEST_AIRFARE (397-398, 412-413, 432) |
 | `pearl-thistle` | hidden_clause | BOOK (sanfrancisco-economy; ECONOMY) | LONG_FLIGHT_CONDITION_NOT_MET or LOWEST_FARE or UPGRADE_NOT_ELIGIBLE | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or DOMESTIC_CLASS or LOWEST_AIRFARE (397-398, 412-413, 426-429) |
-| `quill-aspen` | hidden_clause | BOOK (morning-economy; ECONOMY) | COMPANION_TRAVEL_AUTHORIZED or LOWEST_FARE | SENIOR_VICE_PRESIDENT | LOWEST_AIRFARE or SPOUSE_COMPANION (267-271, 412-413) |
+| `quill-aspen` | hidden_clause | BOOK (morning-economy; ECONOMY) | COMPANION_TRAVEL_AUTHORIZED or LOWEST_FARE | NONE or SENIOR_VICE_PRESIDENT | LOWEST_AIRFARE or SPOUSE_COMPANION (267-271, 412-413) |
 | `raven-dell` | distractor | BOOK (jetblue-economy; ECONOMY) | LOWEST_FARE | NONE | CLASS_OF_SERVICE or DOMESTIC_CLASS or LOWEST_AIRFARE or ADVANCE_PURCHASE (397-398, 408-409, 412-413) |
 | `saffron-knoll` | distractor | BOOK (delta-economy; ECONOMY) | LOWEST_FARE | NONE | CLASS_OF_SERVICE or DOMESTIC_CLASS or LOWEST_AIRFARE or AIR_TRAVEL_GENERAL (382-384, 397-398, 412-413) |
 | `tansy-reef` | refusal | REFUSE (none; NONE) | OUTSIDE_POLICY_SCOPE or PERSONAL_TRAVEL_NOT_COVERED | NONE | PERSONAL_VACATION or RESPONSIBILITY (128-129, 296-298) |
@@ -102,7 +102,9 @@ Accept sets: on BOOK and REFUSE every defensible code is accepted beside the spe
 class-of-service heading, its domestic or international subheading and the lowest-airfare section, plus the
 section of any rule the trip touches. The approver is `NONE` unless a sign-off is relied on or awaited; where a sign-off is on file
 but the decision does not use it (a business sign-off on an economy booking: `cobalt-sedge`, `dune-larkspur`,
-`garnet-moor`, `iris-tundra`, `pearl-thistle`), that role is accepted beside `NONE`. A hold over unclear words
+`garnet-moor`, `iris-tundra`, `pearl-thistle`), that role is accepted beside `NONE`. A BOOK that rests on a sign-off
+already on file accepts its role and `NONE` too (`ember-quarry`, `fennel-ridge`, `heron-bluff`, `moss-harbor`,
+`lilac-ferry`, `quill-aspen`); a hold for a sign-off not yet given (`yew-hollow`) accepts only the awaited role. A hold over unclear words
 accepts `NOT_NAMED` or `TRAVEL_DEPARTMENT` (lines 139-141 send policy questions to the Travel Desk), and
 `vellum-ash` also `VICE_PRESIDENT`, whose sign-off on file the held business fare relies on. REFUSE means the company buys no ticket at all for the request.
 

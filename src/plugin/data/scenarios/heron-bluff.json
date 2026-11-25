@@ -121,6 +121,7 @@
       "LONG_FLIGHT_APPROVED"
     ],
     "approvers": [
+      "NONE",
       "VICE_PRESIDENT"
     ],
     "clauses": [

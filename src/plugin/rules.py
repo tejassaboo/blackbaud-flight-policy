@@ -153,6 +153,13 @@ def unused_sign_offs(trip):
     return [Approver.NONE, *(record.role for record in trip.sign_offs)]
 
 
+def relied_on(roles):
+    """Approvers a BOOK that rests on sign-offs already on file accepts: their roles, and NONE, since readers
+    split on whether a routine sign-off already given is one the decision "relies on" (template SYNC_NOTES 4').
+    A hold accepts only the role it waits for."""
+    return [Approver.NONE, *roles]
+
+
 def is_upgradeable(trip, offer):
     return offer.cabin == Cabin.ECONOMY and any(
         rule.flight_number == offer.segments[0].flight_number and rule.fare_cents == offer.fare_cents
@@ -280,7 +287,7 @@ def companion(trip, lowest):
     if trip.requested_cabin != Cabin.ECONOMY or not trip.accompanies:
         raise ValueError("a companion outside economy, or with nobody accompanied, is not modelled")
     return answer(Decision.BOOK, lowest, [ReasonCode.COMPANION_TRAVEL_AUTHORIZED, ReasonCode.LOWEST_FARE],
-                  [Approver.SENIOR_VICE_PRESIDENT], [Clause.SPOUSE_COMPANION, Clause.LOWEST_AIRFARE],
+                  relied_on([Approver.SENIOR_VICE_PRESIDENT]), [Clause.SPOUSE_COMPANION, Clause.LOWEST_AIRFARE],
                   "Lines 267-271: the companion's trip to help entertain clients' spouses was authorized in advance by "
                   "a Senior Vice President; lines 412-413: at the lowest available airfare.")
 
@@ -303,7 +310,7 @@ def domestic_business(trip, allowed, lowest):
         wanted = business_offers(allowed)
         if not wanted:
             raise ValueError("a medical exception with no business offer is not modelled")
-        return answer(Decision.BOOK, wanted, [ReasonCode.MEDICAL_NEED], list(needed), class_clauses(True),
+        return answer(Decision.BOOK, wanted, [ReasonCode.MEDICAL_NEED], relied_on(needed), class_clauses(True),
                       "Lines 398-399: a medical exception approved by both the travel department and the Vice "
                       "President; the cheapest nonrefundable business fare.")
     return answer(Decision.BOOK, lowest,
@@ -354,7 +361,7 @@ def international_business(trip, seated, allowed, lowest):
            for offer in seated):
         reasons.append(ReasonCode.REFUNDABLE_FARE_NOT_ALLOWED)
         clauses.append(Clause.LOWEST_AIRFARE)
-    return answer(Decision.BOOK, wanted, reasons, [Approver.VICE_PRESIDENT], clauses,
+    return answer(Decision.BOOK, wanted, reasons, relied_on([Approver.VICE_PRESIDENT]), clauses,
                   "Lines 402-404: the travel exceeds 480 minutes and the traveller's Vice-President approved business "
                   "in advance; the cheapest nonrefundable business fare (line 432).")
 

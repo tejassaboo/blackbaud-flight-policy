@@ -121,6 +121,7 @@
       "REFUNDABLE_FARE_NOT_ALLOWED"
     ],
     "approvers": [
+      "NONE",
       "VICE_PRESIDENT"
     ],
     "clauses": [
