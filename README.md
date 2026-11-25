@@ -1,5 +1,7 @@
 # Blackbaud Travel Policy Flight Booking
 
+**Source of the handbook:** http://ctp.travelinc.com/CompanyForms/blackbaud/blackbaud%20Travel%20Policy%202014.pdf. The agent reads it verbatim (bundled at `src/plugin/data/policy.txt`); flights, fares and trips are synthetic.
+
 **No affiliation with Blackbaud, Inc.** The handbook is the company's *Travel Policy* (February 2014), a PDF a
 travel agency hosted publicly, bundled verbatim for research. Do not publish this plugin before the course staff
 confirm that a verbatim corporate handbook may be redistributed (MASTER_PLAN section 4: corporate plugins wait for
