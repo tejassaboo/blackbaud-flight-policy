@@ -151,7 +151,11 @@ def scenario(id, category, overlays, request, trip_, search_spec, exp, must_keep
 DOM_LOW = ["CLASS_OF_SERVICE", "DOMESTIC_CLASS", "LOWEST_AIRFARE"]
 INT_LOW = ["CLASS_OF_SERVICE", "INTERNATIONAL_CLASS", "LOWEST_AIRFARE"]
 INT_CLASS = ["CLASS_OF_SERVICE", "INTERNATIONAL_CLASS"]
-NOT_LONG = ["LONG_FLIGHT_CONDITION_NOT_MET", "LOWEST_FARE", "UPGRADE_NOT_ELIGIBLE"]
+# A booking that declines the business cabin asked for gives the reason the request is declined (task
+# instructions): the 8-hour condition or the domestic coach rule, not LOWEST_FARE (template APPROVER_REVIEW,
+# declined requests). nectar-pine's upgradeable fare is declined by line 433 of the Lowest Airfare Selection
+# section, so it keeps LOWEST_FARE.
+NOT_LONG = ["LONG_FLIGHT_CONDITION_NOT_MET", "UPGRADE_NOT_ELIGIBLE"]
 LONG_OK = ["INTERNATIONAL_LONG_FLIGHT", "LONG_FLIGHT_APPROVED"]
 UNCLEAR_ROLES = ["NOT_NAMED", "TRAVEL_DEPARTMENT"]
 # A Vice-President's business sign-off on file, used by the decision or not: NONE or that role (template
@@ -493,7 +497,7 @@ scenario(
          upgradeable_fares=[{"flight_number": first_flight("nectar-pine", nectar_spec, "british-flex"),
                              "fare_cents": 79500}]),
     nectar_spec,
-    expected("BOOK", ["british-economy"], ["ECONOMY"], NOT_LONG, ["NONE"], INT_LOW),
+    expected("BOOK", ["british-economy"], ["ECONOMY"], [*NOT_LONG, "LOWEST_FARE"], ["NONE"], INT_LOW),
     [NO_UPGRADEABLE, INTERNATIONAL, LOWEST],
     "Upgradeable fares are not allowed to be booked (line 433). The only exception, international travel exceeding "
     "8 hours (lines 402-404), does not reach a 405-minute nonstop. The lowest fare; the traveller may still use miles "

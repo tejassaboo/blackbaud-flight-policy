@@ -38,3 +38,23 @@ No scenario or grader defect was found. Expected after the fix on the same answe
 `uv run pytest -q` (214 passed), `uv run ruff check .`, `uv lock --check`, `python3 ../_template/check_shared.py .`
 (ok), `tools/stock_verify.py` with the NanoAgent venv (24 scenarios, 0 failures). `world.py` and every scenario
 world are unchanged, so `world_diff.py` has nothing to report.
+
+## Declined requests (lead's decision after the review, template APPROVER_REVIEW.md)
+
+The booking task's instructions now end: "When you book something other than what the traveller asked for, the
+reason code gives why their request is declined." Accept sets follow it:
+
+- garnet-moor, iris-tundra (international, not over 8 hours) and pearl-thistle (domestic) decline the business
+  cabin asked for and no longer accept `LOWEST_FARE`. The ground is the 8-hour condition of lines 402-404 or the
+  coach rule of line 397, so `LONG_FLIGHT_CONDITION_NOT_MET` or `UPGRADE_NOT_ELIGIBLE`. The paid run gave one of
+  those on all three.
+- nectar-pine (upgradeable fare) keeps `LOWEST_FARE` beside them: line 433, which bans upgradeable fares, is a
+  bullet of the Lowest Airfare Selection section.
+- cobalt-sedge (United for status) keeps `LOWEST_FARE` beside `LOYALTY_PROGRAM_PREFERENCE`: lines 442-444 decline
+  it because it costs more than the lowest available airfare.
+- kelp-meadow keeps `LOWEST_FARE` beside `TRAVELLER_LIMIT_PER_FLIGHT`: the traveller asked for the cheapest seat
+  and gets the cheapest one the limit allows. Neither degenerate agent passes it either way.
+- Untouched, nothing asked for is declined: amber-wren, basil-cove, dune-larkspur, jasper-glen, onyx-brook,
+  quill-aspen, raven-dell, saffron-knoll, and every business booking.
+
+`MAX_PASS_ALWAYS_LOWEST` goes from 12 to 9 of 24 (measured).

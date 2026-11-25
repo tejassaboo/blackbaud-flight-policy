@@ -313,8 +313,10 @@ def domestic_business(trip, allowed, lowest):
         return answer(Decision.BOOK, wanted, [ReasonCode.MEDICAL_NEED], relied_on(needed), class_clauses(True),
                       "Lines 398-399: a medical exception approved by both the travel department and the Vice "
                       "President; the cheapest nonrefundable business fare.")
+    # The cabin asked for is declined: the reason says why (task instructions). The ground is line 397's coach
+    # rule, not the lowest-fare rule, so LOWEST_FARE is not accepted.
     return answer(Decision.BOOK, lowest,
-                  [ReasonCode.UPGRADE_NOT_ELIGIBLE, ReasonCode.LOWEST_FARE, ReasonCode.LONG_FLIGHT_CONDITION_NOT_MET],
+                  [ReasonCode.UPGRADE_NOT_ELIGIBLE, ReasonCode.LONG_FLIGHT_CONDITION_NOT_MET],
                   unused_sign_offs(trip), [*class_clauses(True), Clause.LOWEST_AIRFARE],
                   "Line 397: domestic air purchases are coach class, regardless of flight time, so a business sign-off "
                   "does not matter; the lowest available airfare.")
@@ -333,8 +335,10 @@ def international_business(trip, seated, allowed, lowest):
     verdict = long_verdict(allowed)
     wanted = business_offers(allowed)
     if verdict is False:
+        # The cabin asked for is declined because the 8-hour condition of lines 402-404 is not met: that is the
+        # reason (task instructions), so LOWEST_FARE is not accepted.
         return answer(Decision.BOOK, lowest,
-                      [ReasonCode.LONG_FLIGHT_CONDITION_NOT_MET, ReasonCode.UPGRADE_NOT_ELIGIBLE, ReasonCode.LOWEST_FARE],
+                      [ReasonCode.LONG_FLIGHT_CONDITION_NOT_MET, ReasonCode.UPGRADE_NOT_ELIGIBLE],
                       unused_sign_offs(trip), [*class_clauses(False), Clause.LOWEST_AIRFARE],
                       "Lines 402-404: the travel does not exceed 480 minutes, so business is not available whoever "
                       "signed; line 402: the lowest possible airfare.")
@@ -376,6 +380,8 @@ def upgradeable(trip, seated, lowest, domestic):
         raise ValueError("an upgradeable request with no upgradeable offer is not modelled")
     verdict = False if domestic else long_verdict([offer for offer in seated if not offer.refundable])
     if verdict is False:
+        # The fare type asked for is declined by line 433, a bullet of the Lowest Airfare Selection section, so
+        # LOWEST_FARE stays beside the specific codes.
         reasons = [ReasonCode.UPGRADE_NOT_ELIGIBLE, ReasonCode.LOWEST_FARE]
         if not domestic:
             reasons.append(ReasonCode.LONG_FLIGHT_CONDITION_NOT_MET)

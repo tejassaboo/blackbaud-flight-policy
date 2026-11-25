@@ -46,7 +46,10 @@ ID_CATEGORY_ENUMS = [contract.Passenger, contract.Purpose, contract.SignOffSubje
 # How many scenarios a degenerate agent may pass: one that always holds the right offer for approval, and
 # one that always books the cheapest seat (with the right section).
 MAX_PASS_ALWAYS_FLAG = 2
-MAX_PASS_ALWAYS_LOWEST = 12  # 11, plus quill-aspen once NONE is accepted beside the companion sign-off on file (SYNC_NOTES 4')
+# NONE is accepted beside a sign-off on file (SYNC_NOTES 4'); LOWEST_FARE is not accepted on a booking that declines
+# the business cabin asked for (template APPROVER_REVIEW, declined requests). It passes amber-wren, basil-cove,
+# cobalt-sedge, dune-larkspur, jasper-glen, nectar-pine, quill-aspen, raven-dell, saffron-knoll.
+MAX_PASS_ALWAYS_LOWEST = 9
 
 # Hand-built duration cases beyond the automatic both-sides tests: (rule, outbound scheduled minutes per
 # flight, layovers, expected True / False / None for unclear).

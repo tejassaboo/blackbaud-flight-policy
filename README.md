@@ -56,16 +56,16 @@ over the cap, so a hosted run with one extra tool call stops before it submits.
 | `dune-larkspur` | easy | BOOK (ana-economy; ECONOMY) | LOWEST_FARE | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS or LOWEST_AIRFARE (402-404, 412-413) |
 | `ember-quarry` | easy | BOOK (ana-business; BUSINESS) | INTERNATIONAL_LONG_FLIGHT or LONG_FLIGHT_APPROVED | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS (402-404) |
 | `fennel-ridge` | boundary_twin | BOOK (delta-business; BUSINESS) | INTERNATIONAL_LONG_FLIGHT or LONG_FLIGHT_APPROVED | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS (402-404) |
-| `garnet-moor` | boundary_twin | BOOK (delta-economy; ECONOMY) | LONG_FLIGHT_CONDITION_NOT_MET or LOWEST_FARE or UPGRADE_NOT_ELIGIBLE | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS or LOWEST_AIRFARE (402-404, 412-413) |
+| `garnet-moor` | boundary_twin | BOOK (delta-economy; ECONOMY) | LONG_FLIGHT_CONDITION_NOT_MET or UPGRADE_NOT_ELIGIBLE | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS or LOWEST_AIRFARE (402-404, 412-413) |
 | `heron-bluff` | boundary_twin | BOOK (morning-business; BUSINESS) | INTERNATIONAL_LONG_FLIGHT or LONG_FLIGHT_APPROVED | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS (402-404) |
-| `iris-tundra` | boundary_twin | BOOK (morning-economy; ECONOMY) | LONG_FLIGHT_CONDITION_NOT_MET or LOWEST_FARE or UPGRADE_NOT_ELIGIBLE | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS or LOWEST_AIRFARE (402-404, 412-413) |
+| `iris-tundra` | boundary_twin | BOOK (morning-economy; ECONOMY) | LONG_FLIGHT_CONDITION_NOT_MET or UPGRADE_NOT_ELIGIBLE | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS or LOWEST_AIRFARE (402-404, 412-413) |
 | `jasper-glen` | boundary_twin | BOOK (jetblue-economy; ECONOMY) | LOWEST_FARE | NONE | CLASS_OF_SERVICE or DOMESTIC_CLASS or LOWEST_AIRFARE or TRAVELING_TOGETHER (286-288, 397-398, 412-413) |
 | `kelp-meadow` | boundary_twin | BOOK (delta-economy; ECONOMY) | LOWEST_FARE or TRAVELLER_LIMIT_PER_FLIGHT | NONE | CLASS_OF_SERVICE or DOMESTIC_CLASS or LOWEST_AIRFARE or TRAVELING_TOGETHER (286-288, 397-398, 412-413) |
 | `lilac-ferry` | multi_rule | BOOK (afternoon-business; BUSINESS) | MEDICAL_NEED | NONE or TRAVEL_DEPARTMENT or VICE_PRESIDENT | CLASS_OF_SERVICE or DOMESTIC_CLASS (397-398, 398-399) |
 | `moss-harbor` | multi_rule | BOOK (delta-business; BUSINESS) | INTERNATIONAL_LONG_FLIGHT or LONG_FLIGHT_APPROVED or REFUNDABLE_FARE_NOT_ALLOWED | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or INTERNATIONAL_CLASS or LOWEST_AIRFARE (402-404, 432) |
 | `nectar-pine` | multi_rule | BOOK (british-economy; ECONOMY) | LONG_FLIGHT_CONDITION_NOT_MET or LOWEST_FARE or UPGRADE_NOT_ELIGIBLE | NONE | CLASS_OF_SERVICE or INTERNATIONAL_CLASS or LOWEST_AIRFARE (402-404, 412-413, 433) |
 | `onyx-brook` | multi_rule | BOOK (american-economy; ECONOMY) | LOWEST_FARE or REFUNDABLE_FARE_NOT_ALLOWED | NONE | CLASS_OF_SERVICE or DOMESTIC_CLASS or LOWEST_AIRFARE (397-398, 412-413, 432) |
-| `pearl-thistle` | hidden_clause | BOOK (sanfrancisco-economy; ECONOMY) | LONG_FLIGHT_CONDITION_NOT_MET or LOWEST_FARE or UPGRADE_NOT_ELIGIBLE | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or DOMESTIC_CLASS or LOWEST_AIRFARE (397-398, 412-413, 426-429) |
+| `pearl-thistle` | hidden_clause | BOOK (sanfrancisco-economy; ECONOMY) | LONG_FLIGHT_CONDITION_NOT_MET or UPGRADE_NOT_ELIGIBLE | NONE or VICE_PRESIDENT | CLASS_OF_SERVICE or DOMESTIC_CLASS or LOWEST_AIRFARE (397-398, 412-413, 426-429) |
 | `quill-aspen` | hidden_clause | BOOK (morning-economy; ECONOMY) | COMPANION_TRAVEL_AUTHORIZED or LOWEST_FARE | NONE or SENIOR_VICE_PRESIDENT | LOWEST_AIRFARE or SPOUSE_COMPANION (267-271, 412-413) |
 | `raven-dell` | distractor | BOOK (jetblue-economy; ECONOMY) | LOWEST_FARE | NONE | CLASS_OF_SERVICE or DOMESTIC_CLASS or LOWEST_AIRFARE or ADVANCE_PURCHASE (397-398, 408-409, 412-413) |
 | `saffron-knoll` | distractor | BOOK (delta-economy; ECONOMY) | LOWEST_FARE | NONE | CLASS_OF_SERVICE or DOMESTIC_CLASS or LOWEST_AIRFARE or AIR_TRAVEL_GENERAL (382-384, 397-398, 412-413) |
@@ -122,8 +122,10 @@ disagree on the limit.
 
 Degenerate agents (`tests/test_verifier.py`): one that always holds the right offer as unclear passes 2 cases
 (`vellum-ash`, `willow-fen`); one that always books the cheapest seat with `LOWEST_FARE`, `NONE` and the right
-section passes 11 (the cheapest-economy cases; it fails every business, refusal, hold, refundable, leadership-team
-and companion case).
+section passes 9 (the cheapest-economy cases where nothing asked for is declined on another ground; it fails every
+business, refusal, hold, refundable and leadership-team case). A booking that declines what the traveller asked
+for gives the reason the request is declined (the task says so), and accepts `LOWEST_FARE` only where the
+lowest-fare rule is that reason.
 
 ## Tools
 
