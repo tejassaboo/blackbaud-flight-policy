@@ -72,7 +72,8 @@
             "cabin": "ECONOMY",
             "fare_cents": 21300
           }
-        ]
+        ],
+        "background": 3
       }
     ]
   },

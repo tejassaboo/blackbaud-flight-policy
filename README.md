@@ -39,7 +39,7 @@ over the cap, so a hosted run with one extra tool call stops before it submits.
   round trip), then `submit`.
 - **Output:** `BookingOutput`: `decision`, `offer_id` (empty when refusing), `cabin` (`NONE` when refusing),
   `reason_code`, `approver` and `clause`, each from a closed list. The reason list is the template's shared list
-  (codes for rules this policy lacks) plus `DOUBLE_BOOKING_PROHIBITED` and `COMPANION_TRAVEL_AUTHORIZED`. Fares
+  (codes for rules this policy lacks) plus `DOUBLE_BOOKING_PROHIBITED` and `COMPANION_TRAVEL_AUTHORIZED`, and decoy codes from other handbooks' rules. Fares
   are in cents of US dollars (`currency: USD`).
 - **Success:** every field is one the answer key accepts; the cabin is graded as the chosen offer's own. Score =
   fields right / 6.
@@ -113,7 +113,8 @@ reading when the elapsed journey with its ground time is 480 or less, otherwise 
 international trips only: line 397 makes domestic air coach "regardless of flight time" (`pearl-thistle`, Boston
 to Honolulu, 690 minutes). "arrival-lounge" (lines 544-547, "eight hours or greater", inclusive, per flight) is
 coded and tested but decides no answer field; `garnet-moor` shows it does not change the cabin. Background offers
-are on (3 per search) except where an itinerary could fall on the other side of 480 minutes: every international
+are on (3 per search, and only on a scenario's own search: `handbook.json` `background_offers` is 0, so a search
+the case does not pin lists nothing and says so) except where an itinerary could fall on the other side of 480 minutes: every international
 scenario whose answer depends on the limit sets `background: 0`, and `rules.solve` raises if offers on one search
 disagree on the limit.
 
@@ -128,7 +129,7 @@ and companion case).
 |---|---|---|
 | `booking_requirements` | The trip record's fields, the world's conventions (local times, dates, fares, sold-out seats) and its airports | `src/plugin/guide.py` |
 | `get_trip` | A case's request and trip record: traveller, route, dates, purpose, requested cabin and fare, sign-offs, colleagues' flights, tickets held, fare rules, driving time | `src/plugin/tools.py` |
-| `search_flights` | Every offer on a route and local date (one way, or round trip with `return_date`): pinned scenario offers plus seeded background offers | `src/plugin/world.py` |
+| `search_flights` | Every offer on a route and local date (one way, or round trip with `return_date`): the pinned scenario offers plus seeded background offers on those searches only; a search the case does not pin lists nothing and says so | `src/plugin/world.py` |
 | `solve_booking` | The answer key (`rules.solve`), the agent task's `reference`, never shown to the agent | `src/plugin/rules.py` |
 
 | Task | Does | Runner |

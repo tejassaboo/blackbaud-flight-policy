@@ -121,8 +121,9 @@ def expected(decision, slots, cabins, reasons, approvers, clauses, phrase=""):
 def search(origin, destination, date, flights, offers, return_date="", background=None):
     data = {"name": "main", "origin": origin, "destination": destination, "date": date, "return_date": return_date,
             "flights": flights, "offers": offers}
-    if background is not None:
-        data["background"] = background
+    # Background offers only on the scenario's own search (handbook.json background_offers is 0, so a search the
+    # scenario does not pin lists nothing): 3 unless the scenario sets its own number.
+    data["background"] = 3 if background is None else background
     return data
 
 

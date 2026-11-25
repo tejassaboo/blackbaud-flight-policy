@@ -84,7 +84,8 @@
             "fare_cents": 31500,
             "refundable": true
           }
-        ]
+        ],
+        "background": 3
       }
     ]
   },
