@@ -153,6 +153,8 @@ INT_CLASS = ["CLASS_OF_SERVICE", "INTERNATIONAL_CLASS"]
 NOT_LONG = ["LONG_FLIGHT_CONDITION_NOT_MET", "LOWEST_FARE", "UPGRADE_NOT_ELIGIBLE"]
 LONG_OK = ["INTERNATIONAL_LONG_FLIGHT", "LONG_FLIGHT_APPROVED"]
 UNCLEAR_ROLES = ["NOT_NAMED", "TRAVEL_DEPARTMENT"]
+# A business sign-off on file that the decision does not use: NONE (it relies on nobody's) or that role.
+NONE_OR_VP = ["NONE", "VICE_PRESIDENT"]
 
 # ===== easy (5) =====
 
@@ -215,7 +217,7 @@ scenario(
         offer("british-economy", "british", "ECONOMY", 79800),
         offer("british-business", "british", "BUSINESS", 498000),
     ]),
-    expected("BOOK", ["british-economy"], ["ECONOMY"], ["LOWEST_FARE", "LOYALTY_PROGRAM_PREFERENCE"], ["NONE"],
+    expected("BOOK", ["british-economy"], ["ECONOMY"], ["LOWEST_FARE", "LOYALTY_PROGRAM_PREFERENCE"], NONE_OR_VP,
              INT_LOW + ["FREQUENT_FLIER"]),
     [LOWEST, INTERNATIONAL, LOYALTY],
     "The traveller asks for economy, so the approved business seat is not taken. A loyalty programme may not add "
@@ -240,7 +242,7 @@ scenario(
         offer("ana-economy", "ana", "ECONOMY", 88700),
         offer("ana-business", "ana", "BUSINESS", 601000),
     ]),
-    expected("BOOK", ["ana-economy"], ["ECONOMY"], ["LOWEST_FARE"], ["NONE"], INT_LOW),
+    expected("BOOK", ["ana-economy"], ["ECONOMY"], ["LOWEST_FARE"], NONE_OR_VP, INT_LOW),
     [LOWEST, INTERNATIONAL],
     "Over 8 hours with the Vice-President's approval, business is permitted (lines 402-404), not required: the "
     "traveller asks for the cheapest economy fare, so the lowest possible airfare.")
@@ -306,7 +308,7 @@ scenario(
     "Business please.",
     trip(traveller_name="Claire Benoit", traveller_title="Director, Product Management", **AMS_TRIP),
     search("DTW", "AMS", "2027-02-09", ams_flights(480), AMS_OFFERS, background=0),
-    expected("BOOK", ["delta-economy"], ["ECONOMY"], NOT_LONG, ["NONE"], INT_LOW),
+    expected("BOOK", ["delta-economy"], ["ECONOMY"], NOT_LONG, NONE_OR_VP, INT_LOW),
     [INTERNATIONAL, LOWEST],
     "Both nonstops are scheduled at exactly 480 minutes: not 'exceeding 8 hours' (lines 402-404), so business is "
     "not available whoever approved it; the lowest possible airfare. The arrival-lounge rule (lines 544-547) is "
@@ -353,7 +355,7 @@ scenario(
         offer("midday-economy", "midday", "ECONOMY", 60400),
         offer("midday-business", "midday", "BUSINESS", 219000),
     ], background=0),
-    expected("BOOK", ["morning-economy"], ["ECONOMY"], NOT_LONG, ["NONE"], INT_LOW),
+    expected("BOOK", ["morning-economy"], ["ECONOMY"], NOT_LONG, NONE_OR_VP, INT_LOW),
     [INTERNATIONAL, LOWEST],
     "Only connections through Miami: 175 + 205 = 380 flying minutes and 480 minutes from first departure to last "
     "arrival with the 100-minute connection. Even counting the ground time the travel does not exceed 480, so "
@@ -537,7 +539,7 @@ scenario(
         offer("sanfrancisco-economy", "sanfrancisco", "ECONOMY", 59900),
         offer("sanfrancisco-business", "sanfrancisco", "BUSINESS", 231000),
     ]),
-    expected("BOOK", ["sanfrancisco-economy"], ["ECONOMY"], NOT_LONG, ["NONE"], DOM_LOW),
+    expected("BOOK", ["sanfrancisco-economy"], ["ECONOMY"], NOT_LONG, NONE_OR_VP, DOM_LOW),
     [DOMESTIC, LOWEST, CRITERIA],
     "Honolulu is in the United States, so this is domestic: coach class, regardless of flight time (line 397). The "
     "Vice-President's approval belongs to the international rule (lines 402-404), which does not apply. The cheapest "
@@ -677,7 +679,7 @@ scenario(
         offer("midday-economy", "midday", "ECONOMY", 60400),
         offer("midday-business", "midday", "BUSINESS", 219000),
     ], background=0),
-    expected("FLAG_FOR_APPROVAL", ["morning-business"], ["BUSINESS"], ["UNCLEAR_POLICY_TEXT"], UNCLEAR_ROLES,
+    expected("FLAG_FOR_APPROVAL", ["morning-business"], ["BUSINESS"], ["UNCLEAR_POLICY_TEXT"], UNCLEAR_ROLES + ["VICE_PRESIDENT"],
              INT_CLASS, phrase="exceeding 8 hours (whether a single segment or multiple segments combined)"),
     [INTERNATIONAL, QUESTIONS],
     "Connections through Miami: 175 + 205 = 380 flying minutes, 495 minutes from first departure to last arrival "

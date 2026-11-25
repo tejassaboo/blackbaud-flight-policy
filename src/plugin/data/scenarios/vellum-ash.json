@@ -130,7 +130,8 @@
     ],
     "approvers": [
       "NOT_NAMED",
-      "TRAVEL_DEPARTMENT"
+      "TRAVEL_DEPARTMENT",
+      "VICE_PRESIDENT"
     ],
     "clauses": [
       "CLASS_OF_SERVICE",

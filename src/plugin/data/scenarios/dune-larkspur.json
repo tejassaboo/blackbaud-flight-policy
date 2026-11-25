@@ -108,7 +108,8 @@
       "LOWEST_FARE"
     ],
     "approvers": [
-      "NONE"
+      "NONE",
+      "VICE_PRESIDENT"
     ],
     "clauses": [
       "CLASS_OF_SERVICE",

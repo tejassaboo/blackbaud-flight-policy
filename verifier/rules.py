@@ -146,6 +146,13 @@ def signed(trip, subject, roles):
     return [record for record in trip.sign_offs if record.subject == subject and record.role in roles]
 
 
+def unused_sign_offs(trip):
+    """Approvers a decision that relies on nobody accepts: NONE, and the role of any sign-off on file that the
+    decision does not use (a business sign-off on an economy booking). The approver field names the sign-off
+    a decision relies on; a reader may also name one that is on file and was weighed, so both are accepted."""
+    return [Approver.NONE, *(record.role for record in trip.sign_offs)]
+
+
 def is_upgradeable(trip, offer):
     return offer.cabin == Cabin.ECONOMY and any(
         rule.flight_number == offer.segments[0].flight_number and rule.fare_cents == offer.fare_cents
@@ -261,7 +268,7 @@ def economy_answer(trip, lowest, domestic, refundable_cheaper, leaders_moved):
         clauses.append(Clause.ADVANCE_PURCHASE)
         notes.append("lines 408-409: the 7-day advance planning applies 'whenever possible', so a late booking still "
                      "gets the lowest fare")
-    return answer(Decision.BOOK, lowest, reasons, [Approver.NONE], clauses, "; ".join(notes) + ".")
+    return answer(Decision.BOOK, lowest, reasons, unused_sign_offs(trip), clauses, "; ".join(notes) + ".")
 
 
 def companion(trip, lowest):
@@ -279,7 +286,10 @@ def companion(trip, lowest):
 
 
 def business_offers(allowed):
-    return cheapest([offer for offer in allowed if offer.cabin == Cabin.BUSINESS])
+    wanted = cheapest([offer for offer in allowed if offer.cabin == Cabin.BUSINESS])
+    if not all(within_criteria(offer) for offer in wanted):
+        raise ValueError("a cheapest business fare outside the connection criteria (lines 427-429) is not modelled")
+    return wanted
 
 
 def domestic_business(trip, allowed, lowest):
@@ -298,7 +308,7 @@ def domestic_business(trip, allowed, lowest):
                       "President; the cheapest nonrefundable business fare.")
     return answer(Decision.BOOK, lowest,
                   [ReasonCode.UPGRADE_NOT_ELIGIBLE, ReasonCode.LOWEST_FARE, ReasonCode.LONG_FLIGHT_CONDITION_NOT_MET],
-                  [Approver.NONE], [*class_clauses(True), Clause.LOWEST_AIRFARE],
+                  unused_sign_offs(trip), [*class_clauses(True), Clause.LOWEST_AIRFARE],
                   "Line 397: domestic air purchases are coach class, regardless of flight time, so a business sign-off "
                   "does not matter; the lowest available airfare.")
 
@@ -318,7 +328,7 @@ def international_business(trip, seated, allowed, lowest):
     if verdict is False:
         return answer(Decision.BOOK, lowest,
                       [ReasonCode.LONG_FLIGHT_CONDITION_NOT_MET, ReasonCode.UPGRADE_NOT_ELIGIBLE, ReasonCode.LOWEST_FARE],
-                      [Approver.NONE], [*class_clauses(False), Clause.LOWEST_AIRFARE],
+                      unused_sign_offs(trip), [*class_clauses(False), Clause.LOWEST_AIRFARE],
                       "Lines 402-404: the travel does not exceed 480 minutes, so business is not available whoever "
                       "signed; line 402: the lowest possible airfare.")
     if not wanted:
@@ -328,10 +338,11 @@ def international_business(trip, seated, allowed, lowest):
         if not approved:
             raise ValueError("an unclear duration without the Vice-President's approval is not modelled")
         return answer(Decision.FLAG_FOR_APPROVAL, wanted, [ReasonCode.UNCLEAR_POLICY_TEXT],
-                      [Approver.NOT_NAMED, Approver.TRAVEL_DEPARTMENT], class_clauses(False),
+                      [Approver.NOT_NAMED, Approver.TRAVEL_DEPARTMENT, Approver.VICE_PRESIDENT], class_clauses(False),
                       "Lines 402-404: the flights add up to 480 minutes or less but the journey with its connection "
                       "is longer; the handbook does not say whether ground time counts. Lines 139-141 send policy "
-                      "questions to the Travel Desk.", phrase=LONG_PHRASE)
+                      "questions to the Travel Desk; the held business fare also relies on the Vice-President's "
+                      "sign-off on file.", phrase=LONG_PHRASE)
     if not approved:
         return answer(Decision.FLAG_FOR_APPROVAL, wanted, [ReasonCode.APPROVAL_REQUIRED], [Approver.VICE_PRESIDENT],
                       class_clauses(False),
@@ -361,7 +372,8 @@ def upgradeable(trip, seated, lowest, domestic):
         reasons = [ReasonCode.UPGRADE_NOT_ELIGIBLE, ReasonCode.LOWEST_FARE]
         if not domestic:
             reasons.append(ReasonCode.LONG_FLIGHT_CONDITION_NOT_MET)
-        return answer(Decision.BOOK, lowest, reasons, [Approver.NONE], [Clause.LOWEST_AIRFARE, *class_clauses(domestic)],
+        return answer(Decision.BOOK, lowest, reasons, unused_sign_offs(trip),
+                      [Clause.LOWEST_AIRFARE, *class_clauses(domestic)],
                       "Line 433: upgradeable fares are not allowed to be booked, and the travel does not exceed 480 "
                       "minutes, so lines 402-404 do not reach it; the lowest available airfare.")
     if verdict is None:

@@ -113,7 +113,8 @@
       "UPGRADE_NOT_ELIGIBLE"
     ],
     "approvers": [
-      "NONE"
+      "NONE",
+      "VICE_PRESIDENT"
     ],
     "clauses": [
       "CLASS_OF_SERVICE",
